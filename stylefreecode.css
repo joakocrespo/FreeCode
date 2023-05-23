@@ -459,7 +459,7 @@ div h1:hover {
 .f5 {
     grid-area: area5;
     text-decoration: none;
-    font-size: 39px;
+    font-size: 30px;
     color: aliceblue;
     border: 1px solid white;
     border-radius: 15px;
@@ -474,7 +474,7 @@ div h1:hover {
 .f5:hover {
     grid-area: area5;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 33px;
     color: rgb(7, 21, 143);
     border: 1px solid white;
     background-color: aliceblue;
@@ -1466,6 +1466,8 @@ div h1:hover {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .sectioncontacto1 {
@@ -1490,3 +1492,62 @@ div h1:hover {
 }
 
 /* ---------------------------fin de contacto html---------------------------- */
+
+/* ----------media queries------ */
+
+@media (max-width: 720px) {
+    .gridcontacto{
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .sectioncontacto2 img {
+        display: flex;
+        width: 80%;
+        padding: 1%;
+    }
+    
+    .headpadre {
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(61, 95, 248);
+        box-shadow: 0px .5px blue;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 920px) {
+    .gridcontacto{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectioncontacto2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .f5 {
+        font-size: 14px;
+    }
+
+    .f5:hover {
+        font-size: 16px;
+    }
+
+    
+    .botonera {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'area5 area5 area9 area10 area7 area6 area1 area2 area3 area4'
+        ;
+        height: 100%;
+        width: 100%;
+    }
+}
