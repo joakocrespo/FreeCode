@@ -217,6 +217,7 @@ div h1:hover {
     left: -10px;
 }
 
+
 .j2 h2 {
     display: flex;
     font-weight: 7;
@@ -231,10 +232,11 @@ div h1:hover {
     background-size: cover;
     background-position: 1%;
     border: 2px rgba(0, 0, 0, 0.767);
-    font-size: 30px;
+    font-size: 26px;
     left: 4%;
     width: 100%; 
     transition: .4s ease-in;
+    padding: 4%;
 }
 
 .j2 h2:hover {
@@ -246,14 +248,16 @@ div h1:hover {
     transition: .6s ease-in;
     display: flex;
     border: 2px solid transparent;
-    font-size: 28px;
+    font-size: 26px;
     border-style: inset;
-    padding: 3%;
+    padding: 4%;
     background-color: rgba(17, 62, 121, 0.884);
     background-blend-mode: darken;
     height: 70%;
     object-fit: cover;
     transition: .5s ease-out;
+    justify-content: center;
+    align-items: center;
 }
 .j3 {
     grid-area: area3;
@@ -1456,6 +1460,7 @@ div h1:hover {
     border-radius: 0px 30px 30px 0px;
 }
 
+
 /* ----------------------------fin wsl html---------------------- */
 
 /* ---------------------------<_>-------------------------------- */
@@ -1481,7 +1486,6 @@ div h1:hover {
 .sectioncontacto2 {
     display: flex;
     width: 100%;
-    padding: 3%;
     align-items: center;
     justify-content: center;
 }
@@ -1489,6 +1493,7 @@ div h1:hover {
 .sectioncontacto2 img {
     display: flex;
     border-radius: 30px;
+    width: 100%
 }
 
 /* ---------------------------fin de contacto html---------------------------- */
@@ -1515,6 +1520,32 @@ div h1:hover {
         width: 100%;
     }
 
+    .enfoot img {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 60%;
+        padding: 20%;
+    }
+
+
+    .j4 h2 {
+        font-size: 63px;
+    }
+
+
+    .sectiongridmain {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+        grid-template-areas: 
+        'area1 area3'
+        'area2 area3'
+        'area4 area4'
+        'area5 area5'
+        'area6 area6'
+        ;
+    }
 }
 
 @media (max-width: 920px) {
@@ -1533,6 +1564,8 @@ div h1:hover {
 
     .f5 {
         font-size: 14px;
+        height: 50%;
+        top: 25%
     }
 
     .f5:hover {
@@ -1550,4 +1583,67 @@ div h1:hover {
         height: 100%;
         width: 100%;
     }
+
+    .j1 h1 {
+        font-size: 42px;
+    }
+
+    .j1 h1:hover {
+        font-size: 24px;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .j2 {
+        height: 100%;
+    }
+
+    .j2 h2 {
+        font-size: 20px;
+        height: 100%;
+        padding: 3%;
+    }
+
+    .j2 h2:hover {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4%;
+        height: 100%;
+    }
+
+    .j2 img {
+        height: 850px;
+    }
+
+    .j5 {
+        height: 100%;
+    }
+
+    
+    .j5 h2 {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    .j5 a {
+        font-size: 15px;
+    }
+
+    .j6 {
+        top: 16%
+    }
 }
+
+@media (max-width: 576px) {
+
+}
+
+/* --------------------fin media------------------ */
+
+/* ----------------------------------------------- */
+
