@@ -1,0 +1,1492 @@
+/* reset */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+/* <!---------------------- barra de navegacion ---------------------> */
+
+.headpadre {
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(61, 95, 248);
+    box-shadow: 0px .5px blue;
+    width: 100%;
+}
+
+.botonera {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'area5 area8 area9 area10 area7 area6 area1 area2 area3 area4'
+    ;
+    height: 100%;
+    width: 100%;
+}
+
+.navhijo {
+    height: 69px;
+    width: 100%;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.botonera a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s all;
+}
+
+.b1 {
+    grid-area: area1;
+}
+
+.b2 {
+    grid-area: area2;
+}
+.b3 {
+    grid-area: area3;
+}
+
+.b4 {
+    grid-area: area4;
+}
+
+.b5 {
+    grid-area: area5;
+    display: flex;
+}
+
+.b6 {
+    grid-area: area6;
+}
+
+.b7 {
+    grid-area: area7;
+}
+
+.b8 {
+    grid-area: area8;
+}
+
+.b9 {
+    grid-area: area9;
+}
+
+.b10 {
+    grid-area: area10;
+}
+
+
+.botonera a:hover{
+    display: flex;
+    justify-content: center;
+    color: rgb(19, 33, 160);
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 95px;
+    transition: 0.7s;
+    border: 1px solid transparent;
+    transition: .5s ease-out;
+}
+
+
+.b3 :hover {
+    display: flex;
+    position: relative;
+}
+
+
+
+.b5 img {
+    border-radius: 30px;
+    display: flex;
+    width: 90%;
+    height: 63px;
+    object-fit: contain cover;    
+}
+
+.b5 img:hover {
+    border-radius: 30px;
+    display: flex;
+    width: 99%;
+    height: 66px;
+    object-fit: contain cover;
+    background-color: #2b22a0;    
+}
+
+/* <!--------------------fin barra de navegacion --------------------> */
+
+
+/* ------------------------------><---------------------------------- */
+
+
+/*<---------------------------main----------------------------------->*/
+
+body {
+    background-color: rgb(34, 30, 255);
+    background-image: url(./assets/fondo-difuminado.jpg);
+    background-repeat: repeat;
+    background-position: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sectiongridmain div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div h1 { 
+    display: flex;
+    position: relative;
+    font-size: 90px;
+    object-fit: cover;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    left: 4%;
+    transition: .6s ease-in;
+}
+
+div h1:hover {
+    display: flex;
+    position: relative;
+    font-size: 90px;
+    object-fit: cover;
+    color: blanchedalmond;
+    align-items: center;
+    justify-content: center;
+    left: 50px;
+    transition: .4s ease-out;
+}
+
+
+.sectiongridmain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+    grid-template-areas: 
+    'area1 area3'
+    'area2 area3'
+    'area4 area4'
+    'area6 area5'
+    'area6 area5'
+    ;
+}
+
+.j1 {
+    grid-area: area1;
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-shadow: 2px 3px rgba(0, 0, 0, 0.637);
+    z-index: 3;
+    transition: .6s ease-in;
+}    
+
+.j1 h1:hover { 
+    background-image: url(./assets/580b585b2edbce24c47b2b88.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    align-content: space-around; 
+    transition: 0.4s ease-out;
+    font-size: 49px;
+    color: #2b22a0;
+    position: relative;
+    text-shadow: 3px 4px rgba(255, 255, 255, 0.815);
+    z-index: 2;
+    grid-area: area1;
+    left: -10px;
+}
+
+.j2 h2 {
+    display: flex;
+    font-weight: 7;
+    border-radius: 35px;
+    color: transparent;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    opacity: 100%;
+    position: relative;
+    background-position: 15%;
+    background-image: url(./assets/practicar-surf.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1%;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 30px;
+    left: 4%;
+    width: 100%; 
+    transition: .4s ease-in;
+}
+
+.j2 h2:hover {
+    font-weight: 7;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 1px 1px .5px 1px rgba(0, 0, 0, 0.493);
+    opacity: 100%;
+    transition: .6s ease-in;
+    display: flex;
+    border: 2px solid transparent;
+    font-size: 28px;
+    border-style: inset;
+    padding: 3%;
+    background-color: rgba(17, 62, 121, 0.884);
+    background-blend-mode: darken;
+    height: 70%;
+    object-fit: cover;
+    transition: .5s ease-out;
+}
+.j3 {
+    grid-area: area3;
+    display: flex;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.j3 img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.j4 {
+    grid-area: area4;
+    display: flex;
+    background-image: url(./assets/4\(77\)\ \(1\).png);
+    background-position: center;
+}
+ .j4 h2 {
+    font-size: 85px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px .5px rgba(0, 0, 0, 0.815);
+    grid-area: area4;
+    transition: .5s ease-in;
+ }
+
+ .j4 h2:hover {
+    font-size: 85px;
+    background-image: url(./assets/4\(77\)\ \(1\).png);
+    background-position: center;
+    background-size: 100%;
+    transition: .9s;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: none;
+    grid-area: area4; 
+    transition: .5s ease-out;
+}
+
+ .j5 {
+    grid-area: area5;
+    display: flex;
+    flex-flow: wrap;
+    font-weight: 7;
+    border-radius: 35px;
+    color: white;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    opacity: 85%;
+    position: relative;
+    background-color: #4a4acc;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 30px;
+    width: 79%;
+    height: 75%; 
+    padding: 5%;
+    top: 11%;
+    left: 10%;
+ }
+
+ .j5 h2 {
+    display: flex;
+    font-weight: 7;
+    color: white;
+    font-size: 33px;
+ }
+
+ .j5 a {
+    display: flex;
+    color: rgb(13, 0, 71);
+    position: relative;
+    font-size: 24px;
+    left: 34%;
+    top: 3%;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 1px 1px .5px 1px rgba(0, 0, 0, 0.63);
+    text-decoration: none;
+    transition: .5s ease-in;
+ }
+
+ .j5 a:hover {
+    display: flex;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-size: 24px;
+    left: 32%;
+    background-color: rgb(1, 0, 83);
+    border-radius: 15px;
+    padding: 2%;
+    box-shadow: 1px 1px .5px 1px rgba(255, 255, 255, 0.63);
+    text-decoration: none;
+    transition: .5s ease-out;
+ }
+
+ .j6 {
+    grid-area: area6;
+    display: flex;
+    position: relative;
+    top: 11%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+    border-radius: 30px;
+ }
+
+
+ .j6 img {
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+ }
+
+ .j6 img:hover {
+    width: 40%;
+    opacity: 1;
+ }
+
+ .brimg1 {
+    border-radius: 30px 0px 0px 30px;
+ }
+
+ .brimg2 {
+    border-radius: 0px 30px 30px 0px;
+ }
+
+ /*<---------------------------fin de main----------------------------->*/
+
+ /* -----------------------------><----------------------------------- */
+
+ /* <----------------------------footer------------------------------> */
+
+.enfooter {
+    background-color: #4a4acc;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    bottom: -90%;
+}
+
+.botenfooter {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 120px;
+    grid-template-areas: 
+    'area8 area1 area2 area3 area4 area6 area7 area5 area5 area10'
+    ;
+    height: 100%;
+    width: 100%;
+}
+
+.enfoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.enfoot img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20%;
+}
+
+
+.f1 {
+    grid-area: area1;
+}
+
+.f2 {
+    grid-area: area2;
+}
+
+.f3 {
+    grid-area: area3;
+}
+
+.f4 {
+    grid-area: area4;
+}
+
+.f5 {
+    grid-area: area5;
+    text-decoration: none;
+    font-size: 39px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 15px;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    position: relative;
+    top: 15%;
+    transition: .5s ease-in;
+}
+
+.f5:hover {
+    grid-area: area5;
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(7, 21, 143);
+    border: 1px solid white;
+    background-color: aliceblue;
+    border-radius: 15px;
+    height: 72%;
+    width: 72%;
+    display: flex;
+    position: relative;
+    top: 15%;
+    transition: .5s ease-out;
+}
+
+/*<---------------------------fin de footer----------------------------->*/
+
+/* ------------------------------>_<------------------------------------ */
+
+/* <-----------------------------destinos------------------------------> */
+
+
+
+.gridestinos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1.5fr 1.5fr 2.75fr 2.75fr;
+    grid-template-areas: 
+    'area1 area1'
+    'area2 area3'
+    'area2 area3'
+    'area4 area5'
+    'area4 area5'
+    ;
+}
+
+.d1 {
+    grid-area: area1;
+    display: flex;
+    background-image:
+    url(./assets/istockphoto-1165204238-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    object-fit: cover contain;
+    position: relative;
+}
+
+.d1 img {
+    grid: area1;
+    display: flex;
+    position: relative;
+}
+
+
+ .d1 h2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px .5px rgba(0, 0, 0, 0.815);
+    grid-area: area1;
+    transition: .7s ease-in;
+ }
+
+ .d1 h2:hover {
+    font-size: 55px;
+    background-image: url(./assets/istockphoto-1165204238-612x612.jpg);
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: none;
+    grid-area: area1; 
+    transition: .7s ease-in;
+}    
+
+
+.d2 {
+    grid-area: area2;
+    display: flex;
+    object-fit: cover;
+    padding: 3%;
+    height: 95%;
+    width: 98%;
+    left: 1%;
+    position: relative;
+}
+
+.d2 h2 {
+    grid-area: area2;
+    display: flex;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-color: #4a4acc;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 35px;
+    padding: 3%;
+    object-fit: cover;
+    align-items: center;
+}
+
+ .d3 {
+    grid-area: area3;
+    display: flex;
+    position: relative;
+    padding: 3%;
+    height: 95%;
+    width: 98%;
+    left: 1%;
+ }
+
+
+ .d3 img {
+    grid-area: area3;
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+    display: flex;
+    position: relative;
+
+ }
+
+ .d3 img:hover {
+    grid-area: area3;
+    width: 55%;
+    height: 100%;
+    opacity: 1;
+
+ }
+
+.d4 {
+    grid-area: area4;
+    display: flex;
+    flex-flow: wrap column;
+    font-size: 27px;
+    padding: 3%;
+    object-fit: cover;
+}
+
+.d4 div {
+    display: flex;
+    margin: 1%;
+    bottom: 3%;
+    position: relative;
+}
+
+.t1 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+
+.t1 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t1 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t1 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.t2 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    border-radius: 20px;
+    padding: 3%;
+}
+
+
+.t2 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t2 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t2 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+
+.t3 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.t3 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t3 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t3 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+.d5 {
+    grid-area: area5;
+    display: flex;
+    flex-flow: column;
+    font-size: 27px;
+    padding: 3%;  
+}
+
+.d5 div {
+    display: flex;
+    margin: 1%;
+    bottom: 3%;
+    position: relative;
+}
+
+
+.t4 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+
+.t4 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t4 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t4 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+
+.t5 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+
+.t5 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t5 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t5 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+.t6 {
+    background-color: white;
+    color: blue;
+    display: flex;
+    flex-flow: column;
+    grid-area: area4;
+    padding: 3%;
+    border-radius: 20px;
+}
+
+.t6 img {
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    height: 150px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.t6 a {
+    display: flex;
+    text-decoration: none;
+    order: 2;
+    background-color: #4a4acc;
+    color: aliceblue;
+    border: 1pz black;
+    border-radius: 15px;
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.t6 h3 {
+    padding: 0%;
+    object-fit: cover;
+    justify-content: center;
+    display: flex;
+}
+
+/* ---------------------fin de html destinos------------------- */
+
+/* ------------------------------------------------------------ */
+
+/* ----------------------escuelas html------------------------- */
+
+.gridescuelas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'area1 area1'
+    'area2 area3'
+    'area5 area4'
+    'area6 area7'
+    
+    ;
+}
+
+.e1 {
+    grid-area: area1;
+    display: flex;
+    background-image:
+    url(./assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 30% 35%;
+    object-fit: cover contain;
+    position: relative;
+}
+
+.e1 img {
+    grid: area1;
+    display: flex;
+    position: relative;
+}
+
+
+ .e1 h2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px .5px rgba(0, 0, 0, 0.815);
+    grid-area: area1;
+    transition: .7s ease-in;
+ }
+
+ .e1 h2:hover {
+    font-size: 55px;
+    background-image: url(./assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+    background-position: 30% 40%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: none;
+    grid-area: area1; 
+    transition: .7s ease-in;
+}    
+
+.e2 {
+    grid-area: area2;
+    display: flex;
+    object-fit: cover;
+    padding: 3%;
+    height: 95%;
+    width: 98%;
+    left: 1%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.e2 h2 {
+    grid-area: area2;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-image: url(./assets/bandera-argentina-ST-1280x720.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 27px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.e2 h3 {
+    grid-area: area2;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+    color: white;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-color: #4a4acc;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 25px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+}
+
+ .e3 {
+    grid-area: area3;
+    display: flex;
+    position: relative;
+    padding: 3%;
+    height: 100%;
+    width: 98%;
+    left: 1%;
+ }
+
+
+ .e3 img {
+    grid-area: area3;
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+    display: flex;
+    position: relative;
+
+ }
+
+ .e3 img:hover {
+    grid-area: area3;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+ }
+
+
+ .e4 {
+    grid-area: area4;
+    display: flex;
+    object-fit: cover;
+    padding: 3%;
+    height: 95%;
+    width: 98%;
+    left: 1%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.e4 h2 {
+    grid-area: area4;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-image: url(./assets/bandera-de-brasil-ST.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 27px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.e4 h3 {
+    grid-area: area4;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+    color: white;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-color: #4a4acc;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 34px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+}
+
+ .e5 {
+    grid-area: area5;
+    display: flex;
+    position: relative;
+    padding: 3%;
+    height: 100%;
+    width: 98%;
+    left: 1%;
+ }
+
+
+ .e5 img {
+    grid-area: area5;
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+    display: flex;
+    position: relative;
+
+ }
+
+ .e5 img:hover {
+    grid-area: area5;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+ }
+
+.e6 {
+    grid-area: area6;
+    display: flex;
+    object-fit: cover;
+    padding: 3%;
+    height: 95%;
+    width: 98%;
+    left: 1%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.e6 h2 {
+    grid-area: area6;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-image: url(./assets/bandera-peru-FB.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 27px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.e6 h3 {
+    grid-area: area6;
+    display: flex;
+    border-radius: 0px 0px 30px 30px;
+    color: white;
+    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    position: relative;
+    background-color: #4a4acc;
+    border: 2px rgba(0, 0, 0, 0.767);
+    font-size: 30px;
+    padding: 4%;
+    object-fit: cover;
+    align-items: center;
+}
+
+ .e7 {
+    grid-area: area7;
+    display: flex;
+    position: relative;
+    padding: 3%;
+    height: 100%;
+    width: 98%;
+    left: 1%;
+ }
+
+
+ .e7 img {
+    grid-area: area7;
+    width: 0%;
+    height: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .3s ease;
+    display: flex;
+    position: relative;
+
+ }
+
+ .e7 img:hover {
+    grid-area: area7;
+    width: 40%;
+    height: 100%;
+    opacity: 1;
+ }
+
+/* ------------------fin escuelas html--------------- */
+
+/* --------------------->_<-------------------------- */
+
+/* ------------------------wsl-------------------------- */
+
+.gridwsl {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    'area1 area1'
+    'area2 area3'
+    'area4 area4'
+    'area5 area6'
+    'area7 area8'
+    'area9 area10'
+    ;
+}
+
+
+
+.w1 {
+    grid-area: area1;
+    display: flex;
+    background-image:
+    url(./assets/World_Surf_League_Logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover contain;
+    position: relative;
+}
+
+.w1 img {
+    grid: area1;
+    display: flex;
+    position: relative;
+}
+
+ .w1 h2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px .5px rgba(0, 0, 0, 0.815);
+    grid-area: area1;
+    transition: .7s ease-in;
+ }
+
+ .w1 h2:hover {
+    font-size: 55px;
+    background-image: url(./assets/WSL.png);
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: none;
+    grid-area: area1; 
+    transition: .7s ease-in;
+}
+
+.w2 {
+    grid-area: area2;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: 100%;
+    top: 9%;
+}
+
+
+.w2 h2 {
+    display: flex;
+    font-size: 42px;
+    width: 90%;
+    height: 83%;
+    padding: 10% 1% 10% 5%;
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3 {
+    grid-area: area3;
+    display: flex;
+    object-fit: cover contain;
+    position: relative;
+    height: 100%;
+    justify-content: start;
+    top: 9%
+}   
+
+.w3 img {
+    grid-area: area3;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 83%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.w4 {
+    grid-area: area4;
+    display: flex;
+    background-image:
+    url(./assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    object-fit: cover contain;
+    position: relative;
+}
+
+.w4 img {
+    grid: area4;
+    display: flex;
+    position: relative;
+}
+
+ .w4 h2 {
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-shadow: 2px 2px .5px rgba(0, 0, 0, 0.815);
+    grid-area: area1;
+    transition: .7s ease-in;
+ }
+
+ .w4 h2:hover {
+    font-size: 55px;
+    background-image: url(./assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: transparent;
+    text-shadow: none;
+    grid-area: area1; 
+    transition: .7s ease-in;
+}
+
+.w5 {
+    grid-area: area5;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: 100%;
+    top: 12%;
+}
+
+
+.w5 h2 {
+    display: flex;
+    font-size: 42px;
+    width: 90%;
+    height: 83%;
+    padding: 10% 1% 10% 5%;
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.w6 {
+    grid-area: area6;
+    display: flex;
+    object-fit: cover contain;
+    position: relative;
+    height: 100%;
+    justify-content: start;
+    top: 12%;
+}   
+
+.w6 img {
+    grid-area: area6;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 83%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+
+.w7 {
+    grid-area: area7;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: 100%;
+    top: 8%;
+}
+
+
+.w7 h2 {
+    display: flex;
+    font-size: 42px;
+    width: 90%;
+    height: 83%;
+    padding: 10% 1% 10% 5%;
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.w8 {
+    grid-area: area8;
+    display: flex;
+    position: relative;
+    height: 100%;
+    justify-content: start;
+    top: 8%;
+}   
+
+.w8 img {
+    grid-area: area6;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 83%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.w9 {
+    grid-area: area9;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    height: 100%;
+    top: 5%
+}
+
+
+.w9 h2 {
+    display: flex;
+    font-size: 42px;
+    width: 90%;
+    height: 83%;
+    padding: 10% 1% 10% 5%;
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.w10 {
+    grid-area: area10;
+    display: flex;
+    position: relative;
+    height: 100%;
+    justify-content: start;
+    top: 5%
+}   
+
+.w10 img {
+    grid-area: area10;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: 83%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+/* ----------------------------fin wsl html---------------------- */
+
+/* ---------------------------<_>-------------------------------- */
+
+/* -------------------------contacto html------------------------ */
+
+.gridcontacto {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sectioncontacto1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 3%;
+    justify-content: center;
+}
+
+.sectioncontacto2 {
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectioncontacto2 img {
+    display: flex;
+    border-radius: 30px;
+}
+
+/* ---------------------------fin de contacto html---------------------------- */
