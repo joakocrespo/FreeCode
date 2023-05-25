@@ -8,121 +8,75 @@
 
 /* <!---------------------- barra de navegacion ---------------------> */
 
-.headpadre {
-    font-size: 24px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+nav {
+    display: flex;
     background-color: rgb(61, 95, 248);
-    box-shadow: 0px .5px blue;
-    width: 100%;
-}
-
-.botonera {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    'area5 area8 area9 area10 area7 area6 area1 area2 area3 area4'
-    ;
-    height: 100%;
-    width: 100%;
-}
-
-.navhijo {
-    height: 69px;
-    width: 100%;
-}
-
-.boton {
+    height: 4rem;
     display: flex;
-    justify-content: center;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-
-.botonera a {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    transition: .5s all;
+    justify-content: flex-end;
 }
 
-.b1 {
-    grid-area: area1;
-}
-
-.b2 {
-    grid-area: area2;
-}
-.b3 {
-    grid-area: area3;
-}
-
-.b4 {
-    grid-area: area4;
-}
-
-.b5 {
-    grid-area: area5;
+ul {
     display: flex;
-}
-
-.b6 {
-    grid-area: area6;
-}
-
-.b7 {
-    grid-area: area7;
-}
-
-.b8 {
-    grid-area: area8;
-}
-
-.b9 {
-    grid-area: area9;
-}
-
-.b10 {
-    grid-area: area10;
+    flex-flow: row;
+    list-style: none;
+    align-items: center;
 }
 
 
-.botonera a:hover{
-    display: flex;
-    justify-content: center;
-    color: rgb(19, 33, 160);
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
-    background-color: aliceblue;
-    border-radius: 95px;
-    transition: 0.7s;
-    border: 1px solid transparent;
-    transition: .5s ease-out;
+    color: white;
+    font-size: 18px;
+    border: .5px transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: .5s;
 }
 
+a:hover {
+    color: blue;
+    background-color: aliceblue;
+}
 
-.b3 :hover {
+img {
     display: flex;
+    height: 3rem;
+    width: 4.5rem;
+    border-radius: 30px;
+}
+
+nav ul {
     position: relative;
 }
 
-
-
-.b5 img {
-    border-radius: 30px;
+.botonera {
+    gap: 1rem;
     display: flex;
-    width: 90%;
-    height: 63px;
-    object-fit: contain cover;    
+    padding-right: 1rem;
 }
 
-.b5 img:hover {
-    border-radius: 30px;
+.submenu {
+    right: 35.5%;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0%;
+    background-color: rgb(61, 95, 248);
+    top: 46px;
+    z-index: 1;
+    position: absolute;
+    display: none;
+    width: 24%;
+}
+
+.submenu a {
     display: flex;
-    width: 99%;
-    height: 66px;
-    object-fit: contain cover;
-    background-color: #2b22a0;    
+    justify-content: center;
+}
+
+.show-menu:hover .submenu {
+    display: block;
 }
 
 /* <!--------------------fin barra de navegacion --------------------> */
