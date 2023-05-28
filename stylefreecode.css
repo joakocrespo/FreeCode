@@ -44,8 +44,6 @@ a:hover {
 img {
     display: flex;
     height: 3rem;
-    width: 4.5rem;
-    border-radius: 30px;
 }
 
 nav ul {
@@ -56,10 +54,21 @@ nav ul {
     gap: 1rem;
     display: flex;
     padding-right: 1rem;
+    position: relative;
 }
 
+.botoneracont{
+    gap: 1rem;
+    display: flex;
+    padding-right: 1rem;
+    position: relative;
+    margin-bottom: 0%;
+}
+
+
+
 .submenu {
-    right: 35.5%;
+    right: 33%;
     border-radius: 0px 0px 10px 10px;
     padding: 0%;
     background-color: rgb(61, 95, 248);
@@ -916,7 +925,8 @@ div h1:hover {
     grid-area: area2;
     display: flex;
     border-radius: 30px 30px 0px 0px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
     box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
     background-image: url(./assets/bandera-argentina-ST-1280x720.jpg);
@@ -924,7 +934,7 @@ div h1:hover {
     background-position: center;
     background-size: 100%;
     border: 2px rgba(0, 0, 0, 0.767);
-    font-size: 27px;
+    font-size: 33px;
     padding: 4%;
     object-fit: cover;
     align-items: center;
@@ -936,12 +946,13 @@ div h1:hover {
     grid-area: area2;
     display: flex;
     border-radius: 0px 0px 30px 30px;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
     box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
-    background-color: #4a4acc;
+    background-color: #5a99eb;
     border: 2px rgba(0, 0, 0, 0.767);
-    font-size: 25px;
+    font-size: 27px;
     padding: 4%;
     object-fit: cover;
     align-items: center;
@@ -997,7 +1008,8 @@ div h1:hover {
     grid-area: area4;
     display: flex;
     border-radius: 30px 30px 0px 0px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
     box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
     background-image: url(./assets/bandera-de-brasil-ST.jpg);
@@ -1005,8 +1017,8 @@ div h1:hover {
     background-position: center;
     background-size: 100%;
     border: 2px rgba(0, 0, 0, 0.767);
-    font-size: 27px;
-    padding: 4%;
+    font-size: 36px;
+    padding: 5%;
     object-fit: cover;
     align-items: center;
     justify-content: center;
@@ -1016,14 +1028,15 @@ div h1:hover {
 .e4 h3 {
     grid-area: area4;
     display: flex;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
     border-radius: 0px 0px 30px 30px;
-    color: white;
     box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
-    background-color: #4a4acc;
+    background-color: #4ece64;
     border: 2px rgba(0, 0, 0, 0.767);
     font-size: 34px;
-    padding: 4%;
+    padding: 5%;
     object-fit: cover;
     align-items: center;
 }
@@ -1063,7 +1076,7 @@ div h1:hover {
     grid-area: area6;
     display: flex;
     object-fit: cover;
-    padding: 3%;
+    padding: 4%;
     height: 95%;
     width: 98%;
     left: 1%;
@@ -1077,16 +1090,17 @@ div h1:hover {
     grid-area: area6;
     display: flex;
     border-radius: 30px 30px 0px 0px;
-    color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+    box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
     background-image: url(./assets/bandera-peru-FB.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     border: 2px rgba(0, 0, 0, 0.767);
-    font-size: 27px;
-    padding: 4%;
+    font-size: 39px;
+    padding: 5%;
     object-fit: cover;
     align-items: center;
     justify-content: center;
@@ -1097,13 +1111,14 @@ div h1:hover {
     grid-area: area6;
     display: flex;
     border-radius: 0px 0px 30px 30px;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
     box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
     position: relative;
-    background-color: #4a4acc;
+    background-color: #e05c5c;
     border: 2px rgba(0, 0, 0, 0.767);
     font-size: 30px;
-    padding: 4%;
+    padding: 6%;
     object-fit: cover;
     align-items: center;
 }
@@ -1227,6 +1242,8 @@ div h1:hover {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .w3 {
     grid-area: area3;
@@ -1439,15 +1456,20 @@ div h1:hover {
 
 .sectioncontacto2 {
     display: flex;
+    position: relative;
     width: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 0%;
 }
 
 .sectioncontacto2 img {
     display: flex;
+    position: relative;
+    top: 15%;
     border-radius: 30px;
-    width: 100%
+    width: 90%;
+    height: 22rem;
 }
 
 /* ---------------------------fin de contacto html---------------------------- */
@@ -1458,12 +1480,16 @@ div h1:hover {
     .gridcontacto{
         display: flex;
         flex-flow: wrap;
+
+        
     }
 
-    .sectioncontacto2 img {
+    .sectioncontacto2  {
         display: flex;
         width: 80%;
         padding: 1%;
+        position: relative;
+        bottom: 2rem;
     }
     
     .headpadre {
@@ -1513,7 +1539,9 @@ div h1:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 3%;
+        padding-bottom: 5%;
+        position: relative;
+        
     }
 
     .f5 {
@@ -1526,17 +1554,6 @@ div h1:hover {
         font-size: 16px;
     }
 
-    
-    .botonera {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        'area5 area5 area9 area10 area7 area6 area1 area2 area3 area4'
-        ;
-        height: 100%;
-        width: 100%;
-    }
 
     .j1 h1 {
         font-size: 42px;
@@ -1600,4 +1617,6 @@ div h1:hover {
 /* --------------------fin media------------------ */
 
 /* ----------------------------------------------- */
+
+
 
