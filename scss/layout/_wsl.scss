@@ -1,0 +1,242 @@
+/* ------------------------wsl-------------------------- */
+main {
+  .grid-wsl {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr;
+    grid-template-areas: "area1 area1" "area2 area3" "area4 area4" "area5 area6" "area7 area8" "area9 area10";
+
+    .titulo-section-wsl {
+      grid-area: area1;
+      display: flex;
+      background-image: url(../assets/World_Surf_League_Logo.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      object-fit: cover contain;
+      position: relative;
+      img {
+        grid: area1;
+        display: flex;
+        position: relative;
+      }
+      h2 {
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+        grid-area: area1;
+        transition: 0.7s ease-in;
+        &:hover {
+          font-size: 55px;
+          background-image: url(../assets/WSL.png);
+          background-position: center;
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: transparent;
+          text-shadow: none;
+          grid-area: area1;
+          transition: 0.7s ease-in;
+        }      
+      }
+    }
+
+    .card-section-texto {
+      grid-area: area2;
+      display: flex;
+      position: relative;
+      justify-content: end;
+      height: 100%;
+      top: 9%;
+      h2 {
+        display: flex;
+        font-size: 42px;
+        width: 90%;
+        height: 83%;
+        padding: 10% 1% 10% 5%;
+        background-color: white;
+        border-radius: 30px 0px 0px 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card-imagen {
+      grid-area: area3;
+      display: flex;
+      object-fit: cover contain;
+      position: relative;
+      height: 100%;
+      justify-content: start;
+      top: 9%;
+      img {
+        grid-area: area3;
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 83%;
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+
+    .subtitulo-section-wsl {
+      grid-area: area4;
+      display: flex;
+      background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      object-fit: cover contain;
+      position: relative;
+      img {
+        grid: area4;
+        display: flex;
+        position: relative;
+      }
+      h2 {
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+        grid-area: area1;
+        transition: 0.7s ease-in;
+        &:hover {
+          font-size: 55px;
+          background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+          background-position: center;
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: transparent;
+          text-shadow: none;
+          grid-area: area1;
+          transition: 0.7s ease-in;
+        }
+      }
+    }
+
+    .card-bottom-section-texto-top   {
+      grid-area: area5;
+      display: flex;
+      position: relative;
+      justify-content: end;
+      height: 100%;
+      top: 12%;
+      h2 {
+        display: flex;
+        font-size: 42px;
+        width: 90%;
+        height: 83%;
+        padding: 10% 1% 10% 5%;
+        background-color: white;
+        border-radius: 30px 0px 0px 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card-bottom-section-pic-top {
+      grid-area: area6;
+      display: flex;
+      object-fit: cover contain;
+      position: relative;
+      height: 100%;
+      justify-content: start;
+      top: 12%;
+      img {
+        grid-area: area6;
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 83%;
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+
+    .card-bottom-section-texto-middle {
+      grid-area: area7;
+      display: flex;
+      position: relative;
+      justify-content: end;
+      height: 100%;
+      top: 8%;
+      h2 {
+        display: flex;
+        font-size: 42px;
+        width: 90%;
+        height: 83%;
+        padding: 10% 1% 10% 5%;
+        background-color: white;
+        border-radius: 30px 0px 0px 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card-bottom-section-pic-middle {
+      grid-area: area8;
+      display: flex;
+      position: relative;
+      height: 100%;
+      justify-content: start;
+      top: 8%;
+      img {
+        grid-area: area6;
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 83%;
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+
+    .card-bottom-section-texto-bottom {
+      grid-area: area9;
+      display: flex;
+      position: relative;
+      justify-content: end;
+      height: 100%;
+      top: 5%;
+      h2 {
+        display: flex;
+        font-size: 42px;
+        width: 90%;
+        height: 83%;
+        padding: 10% 1% 10% 5%;
+        background-color: white;
+        border-radius: 30px 0px 0px 30px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card-bottom-section-pic-bottom {
+      grid-area: area10;
+      display: flex;
+      position: relative;
+      height: 100%;
+      justify-content: start;
+      top: 5%;
+      img {
+        grid-area: area10;
+        display: flex;
+        position: relative;
+        width: 90%;
+        height: 83%;
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+  }
+}
+  /* ----------------------------fin wsl html---------------------- */

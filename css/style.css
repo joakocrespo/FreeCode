@@ -1,0 +1,1646 @@
+/* reset */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* <!---------------------- barra de navegacion ---------------------> */
+header nav {
+  display: flex;
+  background-color: rgb(61, 95, 248);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  padding-right: 1rem;
+  position: relative;
+}
+header nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  border: 0.5px transparent;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+header nav a:hover {
+  color: rgb(61, 95, 248);
+  background-color: aliceblue;
+}
+header nav img {
+  display: flex;
+  height: 3rem;
+}
+header nav .show-menu {
+  display: flex;
+}
+header nav .show-menu:hover .submenu {
+  display: block;
+}
+header nav .show-menu .submenu {
+  right: 33%;
+  border-radius: 0px 0px 10px 10px;
+  padding: 0%;
+  background-color: rgb(61, 95, 248);
+  top: 46px;
+  z-index: 1;
+  position: absolute;
+  display: none;
+  width: 24%;
+}
+header nav .show-menu .submenu a {
+  display: flex;
+  justify-content: center;
+}
+header nav .botonera-wsl-contacto {
+  gap: 1rem;
+  display: flex;
+  padding-right: 1rem;
+  position: relative;
+  margin-bottom: 0%;
+}
+header nav .botonera-wsl-contacto .submenu {
+  right: 148px;
+}
+
+/* <!--------------------fin barra de navegacion --------------------> */
+/* <----------------------------footer------------------------------> */
+.cont-footer {
+  background-color: rgb(61, 95, 248);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: -90%;
+}
+.cont-footer .botonera-footer {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 120px;
+  grid-template-areas: "area8 area1 area2 area3 area4 area6 area7 area5 area5 area10";
+  height: 100%;
+  width: 100%;
+}
+.cont-footer .botonera-footer .boton-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.cont-footer .botonera-footer .boton-footer img {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20%;
+}
+.cont-footer .botonera-footer .insta {
+  grid-area: area1;
+}
+.cont-footer .botonera-footer .facebo {
+  grid-area: area2;
+}
+.cont-footer .botonera-footer .twitt {
+  grid-area: area3;
+}
+.cont-footer .botonera-footer .gmail {
+  grid-area: area4;
+}
+.cont-footer .botonera-footer .contac {
+  grid-area: area5;
+  text-decoration: none;
+  font-size: 30px;
+  color: aliceblue;
+  border: 1px solid white;
+  border-radius: 15px;
+  height: 70%;
+  width: 70%;
+  display: flex;
+  position: relative;
+  top: 15%;
+  transition: 0.5s ease-in;
+}
+.cont-footer .botonera-footer .contac:hover {
+  grid-area: area5;
+  text-decoration: none;
+  font-size: 33px;
+  color: rgb(61, 95, 248);
+  border: 1px solid white;
+  background-color: aliceblue;
+  border-radius: 15px;
+  height: 72%;
+  width: 72%;
+  display: flex;
+  position: relative;
+  top: 15%;
+  transition: 0.5s ease-out;
+}
+
+/*<---------------------------fin de footer----------------------------->*/
+/*<---------------------------main----------------------------------->*/
+body {
+  background-color: rgb(34, 30, 255);
+  background-image: url(../assets/fondo-difuminado.jpg);
+  background-repeat: repeat;
+  background-position: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body .sectiongridmain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+  grid-template-areas: "area1 area3" "area2 area3" "area4 area4" "area6 area5" "area6 area5";
+}
+body .sectiongridmain .sectiongridmain div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .sectiongridmain .bienvenida-titulo {
+  grid-area: area1;
+  display: flex;
+}
+body .sectiongridmain .bienvenida-titulo h1 {
+  margin: 5%;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.637);
+  z-index: 3;
+  transition: 0.6s ease-in;
+  bottom: 10%;
+  color: white;
+  font-size: 84px;
+  left: 4%;
+  bottom: 4%;
+}
+body .sectiongridmain .bienvenida-titulo h1:hover {
+  background-image: url(../assets/580b585b2edbce24c47b2b88.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  align-content: space-around;
+  transition: 0.4s ease-out;
+  font-size: 49px;
+  color: #2b22a0;
+  position: relative;
+  text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.815);
+  z-index: 2;
+  grid-area: area1;
+}
+body .sectiongridmain .bienvenida-descripcion h2 {
+  display: flex;
+  font-weight: 7;
+  border-radius: 35px;
+  color: transparent;
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  opacity: 100%;
+  position: relative;
+  background-position: 15%;
+  background-image: url(../assets/practicar-surf.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 1%;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 26px;
+  left: 4%;
+  top: 10%;
+  width: 100%;
+  transition: 0.4s ease-in;
+  padding: 4%;
+}
+body .sectiongridmain .bienvenida-descripcion h2:hover {
+  font-weight: 7;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.493);
+  opacity: 100%;
+  transition: 0.6s ease-in;
+  display: flex;
+  border: 2px solid transparent;
+  font-size: 26px;
+  border-style: inset;
+  padding: 4%;
+  background-color: rgba(17, 62, 121, 0.884);
+  background-blend-mode: darken;
+  height: 70%;
+  object-fit: cover;
+  transition: 0.5s ease-out;
+  justify-content: center;
+  align-items: center;
+}
+body .sectiongridmain .bienvenida-pic {
+  grid-area: area3;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+body .sectiongridmain .bienvenida-pic img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+body .sectiongridmain .subtitulo-novedades {
+  grid-area: area4;
+  display: flex;
+  background-image: url(../assets/4\(77\)\ \(1\).png);
+  background-position: center;
+}
+body .sectiongridmain .subtitulo-novedades h2 {
+  font-size: 85px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+  grid-area: area4;
+  transition: 0.5s ease-in;
+}
+body .sectiongridmain .subtitulo-novedades h2:hover {
+  font-size: 85px;
+  background-image: url(../assets/4\(77\)\ \(1\).png);
+  background-position: center;
+  background-size: 100%;
+  transition: 0.9s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: none;
+  grid-area: area4;
+  transition: 0.5s ease-out;
+}
+body .sectiongridmain .descripcion-novedades {
+  grid-area: area5;
+  display: flex;
+  flex-flow: wrap;
+  font-weight: 7;
+  border-radius: 35px;
+  color: white;
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  opacity: 85%;
+  position: relative;
+  background-color: #4a4acc;
+  border: 2px rgba(0, 0, 0, 0.767);
+  width: 79%;
+  height: 75%;
+  padding: 5%;
+  top: 11%;
+  left: 10%;
+}
+body .sectiongridmain .descripcion-novedades h2 {
+  display: flex;
+  font-weight: 7;
+  color: white;
+  font-size: 33px;
+}
+body .sectiongridmain .descripcion-novedades a {
+  display: flex;
+  color: rgb(13, 0, 71);
+  position: relative;
+  font-size: 24px;
+  left: 34%;
+  top: 3%;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  padding: 2%;
+  box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.63);
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  align-items: center;
+}
+body .sectiongridmain .descripcion-novedades a:hover {
+  display: flex;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 24px;
+  left: 32%;
+  background-color: rgb(1, 0, 83);
+  border-radius: 15px;
+  padding: 2%;
+  box-shadow: 1px 1px 0.5px 1px rgba(255, 255, 255, 0.63);
+  text-decoration: none;
+  transition: 0.5s ease-out;
+}
+body .sectiongridmain .galeria-novedades {
+  grid-area: area6;
+  display: flex;
+  position: relative;
+  top: 11%;
+  left: 10%;
+  width: 80%;
+  height: 75%;
+}
+body .sectiongridmain .galeria-novedades img {
+  width: 0%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+body .sectiongridmain .galeria-novedades img:hover {
+  width: 40%;
+  opacity: 1;
+}
+body .sectiongridmain .galeria-novedades .brimg1 {
+  border-radius: 30px 0px 0px 30px;
+}
+body .sectiongridmain .galeria-novedades .brimg2 {
+  border-radius: 0px 30px 30px 0px;
+}
+
+/*<---------------------------fin de index----------------------------->*/
+/* <-----------------------------destinos------------------------------> */
+main .gridestinos {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1.5fr 1.5fr 2.75fr 2.75fr;
+  grid-template-areas: "area1 area1" "area2 area3" "area2 area3" "area4 area5" "area4 area5";
+}
+main .gridestinos .tittle-destinos {
+  grid-area: area1;
+  display: flex;
+  background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  object-fit: cover contain;
+  position: relative;
+}
+main .gridestinos .tittle-destinos img {
+  grid: area1;
+  display: flex;
+  position: relative;
+}
+main .gridestinos .tittle-destinos h2 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .gridestinos .tittle-destinos h2:hover {
+  font-size: 55px;
+  background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: none;
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .gridestinos .top-section-text {
+  grid-area: area2;
+  display: flex;
+  object-fit: cover;
+  padding: 3%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+  position: relative;
+}
+main .gridestinos .top-section-text h2 {
+  grid-area: area2;
+  display: flex;
+  border-radius: 30px;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-color: #4a4acc;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 35px;
+  padding: 3%;
+  object-fit: cover;
+  align-items: center;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.623);
+}
+main .gridestinos .top-section-pics {
+  grid-area: area3;
+  display: flex;
+  position: relative;
+  padding: 3%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+}
+main .gridestinos .top-section-pics img {
+  grid-area: area3;
+  width: 0%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  display: flex;
+  position: relative;
+}
+main .gridestinos .top-section-pics img:hover {
+  grid-area: area3;
+  width: 55%;
+  height: 100%;
+  opacity: 1;
+}
+main .gridestinos .top-section-pics .brimg1 {
+  border-radius: 30px 0px 0px 30px;
+}
+main .gridestinos .top-section-pics .brimg2 {
+  border-radius: 0px 30px 30px 0px;
+}
+main .gridestinos .bottom-section-cards-left {
+  grid-area: area4;
+  display: flex;
+  flex-flow: wrap column;
+  font-size: 27px;
+  padding: 3%;
+  object-fit: cover;
+}
+main .gridestinos .bottom-section-cards-left div {
+  display: flex;
+  margin: 1%;
+  bottom: 3%;
+  position: relative;
+}
+main .gridestinos .bottom-section-cards-left .card-1-left {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  padding: 3%;
+  border-radius: 20px;
+}
+main .gridestinos .bottom-section-cards-left .card-1-left img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-left .card-1-left a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-left .card-1-left h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+main .gridestinos .bottom-section-cards-left .card-2-left {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  border-radius: 20px;
+  padding: 3%;
+}
+main .gridestinos .bottom-section-cards-left .card-2-left img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-left .card-2-left a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-left .card-2-left h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+main .gridestinos .bottom-section-cards-left .card-3-left {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  padding: 3%;
+  border-radius: 20px;
+}
+main .gridestinos .bottom-section-cards-left .card-3-left img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-left .card-3-left a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-left .card-3-left h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+main .gridestinos .bottom-section-cards-right {
+  grid-area: area5;
+  display: flex;
+  flex-flow: column;
+  font-size: 27px;
+  padding: 3%;
+}
+main .gridestinos .bottom-section-cards-right div {
+  display: flex;
+  margin: 1%;
+  bottom: 3%;
+  position: relative;
+}
+main .gridestinos .bottom-section-cards-right .card-1-right {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  padding: 3%;
+  border-radius: 20px;
+}
+main .gridestinos .bottom-section-cards-right .card-1-right img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-right .card-1-right a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-right .card-1-right h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+main .gridestinos .bottom-section-cards-right .card-2-right {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  padding: 3%;
+  border-radius: 20px;
+}
+main .gridestinos .bottom-section-cards-right .card-2-right img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-right .card-2-right a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-right .card-2-right h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+main .gridestinos .bottom-section-cards-right .card-3-right {
+  background-color: white;
+  color: blue;
+  display: flex;
+  flex-flow: column;
+  grid-area: area4;
+  padding: 3%;
+  border-radius: 20px;
+}
+main .gridestinos .bottom-section-cards-right .card-3-right img {
+  display: flex;
+  position: relative;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 15px 15px 0px 0px;
+}
+main .gridestinos .bottom-section-cards-right .card-3-right a {
+  display: flex;
+  text-decoration: none;
+  order: 2;
+  background-color: #4a4acc;
+  color: aliceblue;
+  border: 1pz black;
+  border-radius: 15px;
+  justify-content: center;
+  border-radius: 0px 0px 15px 15px;
+}
+main .gridestinos .bottom-section-cards-right .card-3-right h3 {
+  padding: 0%;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+
+/* ---------------------fin de html destinos------------------- */
+/* ----------------------escuelas html------------------------- */
+.gridescuelas {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.5fr 2fr 2fr 2fr;
+  grid-template-areas: "area1 area1" "area2 area3" "area5 area4" "area6 area7";
+}
+.gridescuelas .escuelas-titulo {
+  grid-area: area1;
+  display: flex;
+  background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 30% 35%;
+  object-fit: cover contain;
+  position: relative;
+}
+.gridescuelas .escuelas-titulo img {
+  grid: area1;
+  display: flex;
+  position: relative;
+}
+.gridescuelas .escuelas-titulo h2 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+.gridescuelas .escuelas-titulo h2:hover {
+  font-size: 55px;
+  background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+  background-position: 30% 40%;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: none;
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+.gridescuelas .card-texto-arg {
+  grid-area: area2;
+  display: flex;
+  object-fit: cover;
+  padding: 3%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gridescuelas .card-texto-arg h2 {
+  grid-area: area2;
+  display: flex;
+  border-radius: 30px 30px 0px 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-image: url(../assets/bandera-argentina-ST-1280x720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 33px;
+  padding: 4%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.gridescuelas .card-texto-arg h3 {
+  grid-area: area2;
+  display: flex;
+  border-radius: 0px 0px 30px 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-color: #5a99eb;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 27px;
+  padding: 4%;
+  object-fit: cover;
+  align-items: center;
+}
+.gridescuelas .galeria-escuelas-arg {
+  grid-area: area3;
+  display: flex;
+  position: relative;
+  padding: 3%;
+  height: 100%;
+  width: 98%;
+  left: 1%;
+}
+.gridescuelas .galeria-escuelas-arg img {
+  grid-area: area3;
+  width: 0%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  display: flex;
+  position: relative;
+}
+.gridescuelas .galeria-escuelas-arg img:hover {
+  grid-area: area3;
+  width: 75%;
+  height: 100%;
+  opacity: 1;
+}
+.gridescuelas .galeria-escuelas-arg .brimg1 {
+  border-radius: 30px 0px 0px 30px;
+}
+.gridescuelas .galeria-escuelas-arg .brimg2 {
+  border-radius: 0px 30px 30px 0px;
+}
+.gridescuelas .card-texto-brasil {
+  grid-area: area4;
+  display: flex;
+  object-fit: cover;
+  padding: 3%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gridescuelas .card-texto-brasil h2 {
+  grid-area: area4;
+  display: flex;
+  border-radius: 30px 30px 0px 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-image: url(../assets/bandera-de-brasil-ST.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 20px;
+  padding: 5%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.gridescuelas .card-texto-brasil h3 {
+  grid-area: area4;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  border-radius: 0px 0px 30px 30px;
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-color: #4ece64;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 36px;
+  padding: 5%;
+  object-fit: cover;
+  align-items: center;
+}
+.gridescuelas .galeria-escuelas-brasil {
+  grid-area: area5;
+  display: flex;
+  position: relative;
+  padding: 3%;
+  height: 100%;
+  width: 98%;
+  left: 1%;
+}
+.gridescuelas .galeria-escuelas-brasil img {
+  grid-area: area5;
+  width: 0%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  display: flex;
+  position: relative;
+}
+.gridescuelas .galeria-escuelas-brasil img:hover {
+  grid-area: area5;
+  width: 75%;
+  height: 100%;
+  opacity: 1;
+}
+.gridescuelas .galeria-escuelas-brasil .brimg1 {
+  border-radius: 30px 0px 0px 30px;
+}
+.gridescuelas .galeria-escuelas-brasil .brimg2 {
+  border-radius: 0px 30px 30px 0px;
+}
+.gridescuelas .card-texto-peru {
+  grid-area: area6;
+  display: flex;
+  object-fit: cover;
+  padding: 4%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gridescuelas .card-texto-peru h2 {
+  grid-area: area6;
+  display: flex;
+  border-radius: 30px 30px 0px 0px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-image: url(../assets/bandera-peru-FB.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 39px;
+  padding: 5%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.gridescuelas .card-texto-peru h3 {
+  grid-area: area6;
+  display: flex;
+  border-radius: 0px 0px 30px 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+  box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+  position: relative;
+  background-color: #e05c5c;
+  border: 2px rgba(0, 0, 0, 0.767);
+  font-size: 30px;
+  padding: 6%;
+  object-fit: cover;
+  align-items: center;
+}
+.gridescuelas .galeria-escuelas-peru {
+  grid-area: area7;
+  display: flex;
+  position: relative;
+  padding: 3%;
+  height: 95%;
+  width: 98%;
+  left: 1%;
+}
+.gridescuelas .galeria-escuelas-peru img {
+  grid-area: area7;
+  width: 0%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.3s ease;
+  display: flex;
+  position: relative;
+}
+.gridescuelas .galeria-escuelas-peru img:hover {
+  grid-area: area7;
+  width: 75%;
+  height: 100%;
+  opacity: 1;
+  object-fit: cover;
+}
+.gridescuelas .galeria-escuelas-peru .brimg1 {
+  border-radius: 30px 0px 0px 30px;
+}
+.gridescuelas .galeria-escuelas-peru .brimg2 {
+  border-radius: 0px 30px 30px 0px;
+}
+
+/* ------------------fin escuelas html--------------- */
+/* ------------------------wsl-------------------------- */
+main .grid-wsl {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 2fr 1fr 2fr 2fr 2fr;
+  grid-template-areas: "area1 area1" "area2 area3" "area4 area4" "area5 area6" "area7 area8" "area9 area10";
+}
+main .grid-wsl .titulo-section-wsl {
+  grid-area: area1;
+  display: flex;
+  background-image: url(../assets/World_Surf_League_Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  object-fit: cover contain;
+  position: relative;
+}
+main .grid-wsl .titulo-section-wsl img {
+  grid: area1;
+  display: flex;
+  position: relative;
+}
+main .grid-wsl .titulo-section-wsl h2 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .grid-wsl .titulo-section-wsl h2:hover {
+  font-size: 55px;
+  background-image: url(../assets/WSL.png);
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: none;
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .grid-wsl .card-section-texto {
+  grid-area: area2;
+  display: flex;
+  position: relative;
+  justify-content: end;
+  height: 100%;
+  top: 9%;
+}
+main .grid-wsl .card-section-texto h2 {
+  display: flex;
+  font-size: 42px;
+  width: 90%;
+  height: 83%;
+  padding: 10% 1% 10% 5%;
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+main .grid-wsl .card-imagen {
+  grid-area: area3;
+  display: flex;
+  object-fit: cover contain;
+  position: relative;
+  height: 100%;
+  justify-content: start;
+  top: 9%;
+}
+main .grid-wsl .card-imagen img {
+  grid-area: area3;
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 83%;
+  border-radius: 0px 30px 30px 0px;
+}
+main .grid-wsl .subtitulo-section-wsl {
+  grid-area: area4;
+  display: flex;
+  background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  object-fit: cover contain;
+  position: relative;
+}
+main .grid-wsl .subtitulo-section-wsl img {
+  grid: area4;
+  display: flex;
+  position: relative;
+}
+main .grid-wsl .subtitulo-section-wsl h2 {
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .grid-wsl .subtitulo-section-wsl h2:hover {
+  font-size: 55px;
+  background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  text-shadow: none;
+  grid-area: area1;
+  transition: 0.7s ease-in;
+}
+main .grid-wsl .card-bottom-section-texto-top {
+  grid-area: area5;
+  display: flex;
+  position: relative;
+  justify-content: end;
+  height: 100%;
+  top: 12%;
+}
+main .grid-wsl .card-bottom-section-texto-top h2 {
+  display: flex;
+  font-size: 42px;
+  width: 90%;
+  height: 83%;
+  padding: 10% 1% 10% 5%;
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+main .grid-wsl .card-bottom-section-pic-top {
+  grid-area: area6;
+  display: flex;
+  object-fit: cover contain;
+  position: relative;
+  height: 100%;
+  justify-content: start;
+  top: 12%;
+}
+main .grid-wsl .card-bottom-section-pic-top img {
+  grid-area: area6;
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 83%;
+  border-radius: 0px 30px 30px 0px;
+}
+main .grid-wsl .card-bottom-section-texto-middle {
+  grid-area: area7;
+  display: flex;
+  position: relative;
+  justify-content: end;
+  height: 100%;
+  top: 8%;
+}
+main .grid-wsl .card-bottom-section-texto-middle h2 {
+  display: flex;
+  font-size: 42px;
+  width: 90%;
+  height: 83%;
+  padding: 10% 1% 10% 5%;
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+main .grid-wsl .card-bottom-section-pic-middle {
+  grid-area: area8;
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: start;
+  top: 8%;
+}
+main .grid-wsl .card-bottom-section-pic-middle img {
+  grid-area: area6;
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 83%;
+  border-radius: 0px 30px 30px 0px;
+}
+main .grid-wsl .card-bottom-section-texto-bottom {
+  grid-area: area9;
+  display: flex;
+  position: relative;
+  justify-content: end;
+  height: 100%;
+  top: 5%;
+}
+main .grid-wsl .card-bottom-section-texto-bottom h2 {
+  display: flex;
+  font-size: 42px;
+  width: 90%;
+  height: 83%;
+  padding: 10% 1% 10% 5%;
+  background-color: white;
+  border-radius: 30px 0px 0px 30px;
+  justify-content: center;
+  align-items: center;
+}
+main .grid-wsl .card-bottom-section-pic-bottom {
+  grid-area: area10;
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: start;
+  top: 5%;
+}
+main .grid-wsl .card-bottom-section-pic-bottom img {
+  grid-area: area10;
+  display: flex;
+  position: relative;
+  width: 90%;
+  height: 83%;
+  border-radius: 0px 30px 30px 0px;
+}
+
+/* ----------------------------fin wsl html---------------------- */
+/* -------------------------contacto html------------------------ */
+.gridcontacto {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.gridcontacto .section-contacto-left {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 3%;
+  justify-content: center;
+}
+.gridcontacto .section-contacto-right {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0%;
+}
+.gridcontacto .section-contacto-right img {
+  display: flex;
+  position: relative;
+  top: 15%;
+  border-radius: 30px;
+  width: 90%;
+  height: 22rem;
+}
+
+/* ---------------------------fin de contacto html---------------------------- */
+/* ----------media queries------ */
+@media (max-width: 963px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 54px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 27px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2 {
+    font-size: 16px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2:hover {
+    font-size: 16px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 775px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 48px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 25px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2 {
+    font-size: 13px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2:hover {
+    font-size: 12px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2 {
+    font-size: 70px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 16px;
+  }
+  body .sectiongridmain .descripcion-novedades a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 691px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 42px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 21px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2 {
+    font-size: 55px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2:hover {
+    font-size: 40px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 15px;
+  }
+  body .sectiongridmain .descripcion-novedades a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 606px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 30px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 15px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2 {
+    font-size: 9px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2:hover {
+    font-size: 9px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2 {
+    font-size: 40px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 10px;
+    padding: 3%;
+  }
+}
+@media (max-width: 422px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 25px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 10px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2 {
+    font-size: 7px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2:hover {
+    font-size: 7px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2 {
+    font-size: 30px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 9px;
+    padding: 3%;
+  }
+}
+@media (max-width: 367px) {
+  body .sectiongridmain .bienvenida-titulo h1 {
+    font-size: 21px;
+  }
+  body .sectiongridmain .bienvenida-titulo h1:hover {
+    font-size: 10px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2 {
+    font-size: 7px;
+  }
+  body .sectiongridmain .bienvenida-descripcion h2:hover {
+    font-size: 6px;
+  }
+  body .sectiongridmain .descripcion-novedades h2 {
+    font-size: 8px;
+    padding: 3%;
+  }
+}
+@media (max-width: 963px) {
+  main .gridestinos .tittle-destinos h2 {
+    font-size: 40px;
+  }
+  main .gridestinos .tittle-destinos h2:hover {
+    font-size: 35px;
+  }
+  main .gridestinos .top-section-text h2 {
+    font-size: 28px;
+    padding: 4%;
+  }
+}
+@media (max-width: 775px) {
+  main .gridestinos {
+    grid-template-rows: 0.5fr 1fr 1.5fr 2fr;
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area5";
+  }
+  main .gridestinos .tittle-destinos h2 {
+    font-size: 30px;
+  }
+  main .gridestinos .tittle-destinos h2:hover {
+    font-size: 25px;
+  }
+  main .gridestinos .top-section-text h2 {
+    font-size: 30px;
+    top: 6%;
+  }
+  main .gridestinos .top-section-pics {
+    bottom: 4%;
+  }
+  main .gridestinos .top-section-pics img:hover {
+    width: 85%;
+  }
+}
+@media (max-width: 691px) {
+  main .gridestinos {
+    grid-template-rows: 0.5fr 1fr 1.5fr 2fr;
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area4" "area5 area5";
+  }
+  main .gridestinos .tittle-destinos h2 {
+    font-size: 25px;
+  }
+  main .gridestinos .tittle-destinos h2:hover {
+    font-size: 15px;
+  }
+  main .gridestinos .top-section-text h2 {
+    font-size: 27px;
+    top: 3%;
+  }
+  main .gridestinos .top-section-pics {
+    bottom: 1%;
+  }
+}
+@media (max-width: 422px) {
+  main .gridestinos .tittle-destinos h2 {
+    font-size: 21px;
+  }
+  main .gridestinos .tittle-destinos h2:hover {
+    font-size: 15px;
+  }
+  main .gridestinos .top-section-text h2 {
+    font-size: 24px;
+    top: 3%;
+  }
+}
+@media (max-width: 367px) {
+  main .gridestinos .tittle-destinos h2 {
+    font-size: 18px;
+  }
+  main .gridestinos .tittle-destinos h2:hover {
+    font-size: 13px;
+  }
+  main .gridestinos .top-section-text h2 {
+    font-size: 21px;
+    top: 3%;
+  }
+}
+@media (max-width: 1025px) {
+  .gridescuelas .card-texto-peru h3 {
+    font-size: 33px;
+    padding: 4%;
+  }
+  .gridescuelas .card-texto-brasil h2 {
+    padding: 7%;
+  }
+  .gridescuelas .card-texto-brasil h3 {
+    font-size: 36px;
+    padding: 7%;
+  }
+}
+@media (max-width: 963px) {
+  .gridescuelas .card-texto-arg h2 {
+    padding: 7%;
+    font-size: 29px;
+  }
+  .gridescuelas .card-texto-arg h3 {
+    padding: 7%;
+    font-size: 27px;
+  }
+  .gridescuelas .card-texto-brasil h2 {
+    padding: 14%;
+    font-size: 15px;
+  }
+  .gridescuelas .card-texto-brasil h3 {
+    padding: 10%;
+    font-size: 35px;
+  }
+  .gridescuelas .card-texto-peru h2 {
+    font-size: 37px;
+    padding: 8%;
+  }
+  .gridescuelas .card-texto-peru h3 {
+    font-size: 32px;
+    padding: 9%;
+  }
+}
+@media (max-width: 775px) {
+  .gridescuelas .escuelas-titulo h2 {
+    font-size: 40px;
+  }
+  .gridescuelas .escuelas-titulo h2:hover {
+    font-size: 30px;
+  }
+  .gridescuelas {
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area4" "area5 area5" "area6 area6" "area7 area7";
+  }
+  .gridescuelas .card-texto-arg h2 {
+    padding: 10%;
+    font-size: 33px;
+  }
+  .gridescuelas .card-texto-arg h3 {
+    padding: 10%;
+    font-size: 30px;
+  }
+  .gridescuelas .card-texto-brasil h2 {
+    padding: 14%;
+    font-size: 27px;
+  }
+  .gridescuelas .card-texto-brasil h3 {
+    padding: 10%;
+    font-size: 36px;
+  }
+  .gridescuelas .card-texto-peru h2 {
+    font-size: 50px;
+    padding: 12%;
+  }
+  .gridescuelas .card-texto-peru h3 {
+    font-size: 34px;
+    padding: 9%;
+  }
+}
+@media (max-width: 691px) {
+  .gridescuelas .escuelas-titulo h2 {
+    font-size: 30px;
+  }
+  .gridescuelas .card-texto-brasil h2 {
+    padding: 13%;
+    font-size: 25px;
+  }
+  .gridescuelas .card-texto-brasil h3 {
+    padding: 14%;
+    font-size: 36px;
+  }
+  .gridescuelas .card-texto-peru h2 {
+    font-size: 50px;
+    padding: 12%;
+  }
+  .gridescuelas .card-texto-peru h3 {
+    font-size: 34px;
+    padding: 12%;
+  }
+}
+@media (max-width: 474px) {
+  .gridescuelas .escuelas-titulo h2 {
+    font-size: 25px;
+  }
+  .gridescuelas .escuelas-titulo h2:hover {
+    font-size: 25px;
+  }
+  .gridescuelas .card-texto-arg h2 {
+    padding: 15%;
+    font-size: 26px;
+  }
+  .gridescuelas .card-texto-brasil h2 {
+    padding: 15%;
+    font-size: 18px;
+  }
+  .gridescuelas .card-texto-brasil h3 {
+    padding: 15%;
+    font-size: 38px;
+  }
+  .gridescuelas .card-texto-peru h2 {
+    font-size: 45px;
+    padding: 15%;
+  }
+  .gridescuelas .card-texto-peru h3 {
+    font-size: 34px;
+    padding: 15%;
+  }
+  .gridescuelas .galeria-escuelas-arg img:hover {
+    width: 90%;
+  }
+  .gridescuelas .galeria-escuelas-brasil img:hover {
+    width: 90%;
+  }
+  .gridescuelas .galeria-escuelas-peru img:hover {
+    width: 90%;
+  }
+}
+@media (max-width: 775px) {
+  main .grid-wsl .card-section-texto h2 {
+    font-size: 32px;
+  }
+  main .grid-wsl .card-bottom-section-texto-top h2 {
+    font-size: 32px;
+  }
+  main .grid-wsl .card-bottom-section-texto-middle h2 {
+    font-size: 32px;
+  }
+  main .grid-wsl .card-bottom-section-texto-bottom h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 540px) {
+  main .grid-wsl .titulo-section-wsl h2 {
+    font-size: 40px;
+  }
+  main .grid-wsl .subtitulo-section-wsl h2 {
+    font-size: 40px;
+  }
+  main .grid-wsl .card-section-texto h2 {
+    font-size: 21px;
+  }
+  main .grid-wsl .card-bottom-section-texto-top h2 {
+    font-size: 21px;
+  }
+  main .grid-wsl .card-bottom-section-texto-middle h2 {
+    font-size: 21px;
+  }
+  main .grid-wsl .card-bottom-section-texto-bottom h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 376px) {
+  main .grid-wsl .card-section-texto h2 {
+    font-size: 20px;
+  }
+  main .grid-wsl .card-bottom-section-texto-top h2 {
+    font-size: 20px;
+  }
+  main .grid-wsl .card-bottom-section-texto-middle h2 {
+    font-size: 20px;
+  }
+  main .grid-wsl .card-bottom-section-texto-bottom h2 {
+    font-size: 20px;
+  }
+}
+/* --------------------fin media------------------ */
+
+/*# sourceMappingURL=style.css.map */

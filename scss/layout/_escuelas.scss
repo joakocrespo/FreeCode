@@ -1,0 +1,296 @@
+/* ----------------------escuelas html------------------------- */
+  .gridescuelas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: .5fr 2fr 2fr 2fr;
+    grid-template-areas: "area1 area1" "area2 area3" "area5 area4" "area6 area7";
+
+    .escuelas-titulo {
+      grid-area: area1;
+      display: flex;
+      background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 30% 35%;
+      object-fit: cover contain;
+      position: relative;
+      img {
+        grid: area1;
+        display: flex;
+        position: relative;
+      }
+      h2 {
+        font-size: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+        grid-area: area1;
+        transition: 0.7s ease-in;
+        &:hover {
+          font-size: 55px;
+          background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+          background-position: 30% 40%;
+          background-size: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: transparent;
+          text-shadow: none;
+          grid-area: area1;
+          transition: 0.7s ease-in;
+        }
+      }
+    }
+
+    .card-texto-arg {
+      grid-area: area2;
+      display: flex;
+      object-fit: cover;
+      padding: 3%;
+      height: 95%;
+      width: 98%;
+      left: 1%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      h2 {
+        grid-area: area2;
+        display: flex;
+        border-radius: 30px 30px 0px 0px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-image: url(../assets/bandera-argentina-ST-1280x720.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 33px;
+        padding: 4%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      h3 {
+        grid-area: area2;
+        display: flex;
+        border-radius: 0px 0px 30px 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-color: #5a99eb;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 27px;
+        padding: 4%;
+        object-fit: cover;
+        align-items: center;
+      }
+    }
+
+    .galeria-escuelas-arg {
+      grid-area: area3;
+      display: flex;
+      position: relative;
+      padding: 3%;
+      height: 100%;
+      width: 98%;
+      left: 1%;
+      img {
+        grid-area: area3;
+        width: 0%;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.3s ease;
+        display: flex;
+        position: relative;
+        &:hover {
+          grid-area: area3;
+          width: 75%;
+          height: 100%;
+          opacity: 1;
+        }
+      }
+      .brimg1 {
+        border-radius: 30px 0px 0px 30px;
+      }
+      .brimg2 {
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+
+    .card-texto-brasil {
+      grid-area: area4;
+      display: flex;
+      object-fit: cover;
+      padding: 3%;
+      height: 95%;
+      width: 98%;
+      left: 1%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      h2 {
+        grid-area: area4;
+        display: flex;
+        border-radius: 30px 30px 0px 0px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-image: url(../assets/bandera-de-brasil-ST.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 20px;
+        padding: 5%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      h3 {
+        grid-area: area4;
+        display: flex;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-color: #4ece64;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 36px;
+        padding: 5%;
+        object-fit: cover;
+        align-items: center;
+      }
+    }
+
+    .galeria-escuelas-brasil {
+      grid-area: area5;
+      display: flex;
+      position: relative;
+      padding: 3%;
+      height: 100%;
+      width: 98%;
+      left: 1%;
+      img {
+        grid-area: area5;
+        width: 0%;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.3s ease;
+        display: flex;
+        position: relative;
+        &:hover {
+          grid-area: area5;
+          width: 75%;
+          height: 100%;
+          opacity: 1;
+        }
+      }
+      .brimg1 {
+        border-radius: 30px 0px 0px 30px;
+      }
+      .brimg2 {
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+
+    .card-texto-peru {
+      grid-area: area6;
+      display: flex;
+      object-fit: cover;
+      padding: 4%;
+      height: 95%;
+      width: 98%;
+      left: 1%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      h2 {
+        grid-area: area6;
+        display: flex;
+        border-radius: 30px 30px 0px 0px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-image: url(../assets/bandera-peru-FB.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 39px;
+        padding: 5%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      h3 {
+        grid-area: area6;
+        display: flex;
+        border-radius: 0px 0px 30px 30px;
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        position: relative;
+        background-color: #e05c5c;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 30px;
+        padding: 6%;
+        object-fit: cover;
+        align-items: center;
+      }
+    }
+
+    .galeria-escuelas-peru {
+      grid-area: area7;
+      display: flex;
+      position: relative;
+      padding: 3%;
+      height: 95%;
+      width: 98%;
+      left: 1%;
+      img {
+        grid-area: area7;
+        width: 0%;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.3s ease;
+        display: flex;
+        position: relative;
+        &:hover {
+          grid-area: area7;
+          width: 75%;
+          height: 100%;
+          opacity: 1;
+          object-fit: cover;
+        }      
+      }
+      .brimg1 {
+        border-radius: 30px 0px 0px 30px;
+      }
+      .brimg2 {
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+  }
+  /* ------------------fin escuelas html--------------- */  

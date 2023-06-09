@@ -1,0 +1,16 @@
+// IMPORT BASE
+@import 'base/vars';
+@import 'base/reset';
+@import 'base/utilities';
+
+// IMPORT COMPONENTES
+@import 'components/navbar';
+@import 'components/footer';
+
+// IMPORT LAYOUTS
+@import 'layout/index';
+@import 'layout/destinos';
+@import 'layout/escuelas';
+@import 'layout/wsl';
+@import 'layout/contacto';
+@import 'layout/mediaqueries';

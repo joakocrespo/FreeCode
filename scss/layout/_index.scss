@@ -1,0 +1,233 @@
+/*<---------------------------main----------------------------------->*/
+body {
+  background-color: rgb(34, 30, 255);
+  background-image: url(../assets/fondo-difuminado.jpg);
+  background-repeat: repeat;
+  background-position: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  .sectiongridmain {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+    grid-template-areas: "area1 area3" "area2 area3" "area4 area4" "area6 area5" "area6 area5";
+    .sectiongridmain div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bienvenida-titulo {
+      grid-area: area1;
+      display: flex;
+      h1 {
+        margin: 5%;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-shadow: 2px 3px rgba(0, 0, 0, 0.637);
+        z-index: 3;
+        transition: 0.6s ease-in;
+        bottom: 10%;
+        color: white;
+        font-size: 84px;
+        left: 4%;
+        bottom: 4%;
+          &:hover {
+          background-image: url(../assets/580b585b2edbce24c47b2b88.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          align-items: end;
+          justify-content: center;
+          align-content: space-around;
+          transition: 0.4s ease-out;
+          font-size: 49px;
+          color: #2b22a0;
+          position: relative;
+          text-shadow: .5px .5px rgba(255, 255, 255, 0.815);
+          z-index: 2;
+          grid-area: area1;
+        }
+      }
+    }
+
+    .bienvenida-descripcion {
+      h2 {
+        display: flex;
+        font-weight: 7;
+        border-radius: 35px;
+        color: transparent;
+        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+        opacity: 100%;
+        position: relative;
+        background-position: 15%;
+        background-image: url(../assets/practicar-surf.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 1%;
+        border: 2px rgba(0, 0, 0, 0.767);
+        font-size: 26px;
+        left: 4%;
+        top: 10%;
+        width: 100%;
+        transition: 0.4s ease-in;
+        padding: 4%;
+        &:hover {
+          font-weight: 7;
+          color: rgb(255, 255, 255);
+          border-radius: 30px;
+          box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.493);
+          opacity: 100%;
+          transition: 0.6s ease-in;
+          display: flex;
+          border: 2px solid transparent;
+          font-size: 26px;
+          border-style: inset;
+          padding: 4%;
+          background-color: rgba(17, 62, 121, 0.884);
+          background-blend-mode: darken;
+          height: 70%;
+          object-fit: cover;
+          transition: 0.5s ease-out;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .bienvenida-pic {
+      grid-area: area3;
+      display: flex;
+      position: relative;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+      }
+    }
+
+    .subtitulo-novedades {
+      grid-area: area4;
+      display: flex;
+      background-image: url(../assets/4\(77\)\ \(1\).png);
+      background-position: center;
+      h2 {
+        font-size: 85px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
+        grid-area: area4;
+        transition: 0.5s ease-in;
+        &:hover {
+          font-size: 85px;
+          background-image: url(../assets/4\(77\)\ \(1\).png);
+          background-position: center;
+          background-size: 100%;
+          transition: 0.9s;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: transparent;
+          text-shadow: none;
+          grid-area: area4;
+          transition: 0.5s ease-out;
+        }
+      }
+    }
+    
+    .descripcion-novedades {
+      grid-area: area5;
+      display: flex;
+      flex-flow: wrap;
+      font-weight: 7;
+      border-radius: 35px;
+      color: white;
+      box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
+      opacity: 85%;
+      position: relative;
+      background-color: #4a4acc;
+      border: 2px rgba(0, 0, 0, 0.767);
+      width: 79%;
+      height: 75%;
+      padding: 5%;
+      top: 11%;
+      left: 10%;
+      h2 {
+        display: flex;
+        font-weight: 7;
+        color: white;
+        font-size: 33px;
+      }
+      a {
+        display: flex;
+        color: rgb(13, 0, 71);
+        position: relative;
+        font-size: 24px;
+        left: 34%;
+        top: 3%;
+        background-color: antiquewhite;
+        border-radius: 15px;
+        padding: 2%;
+        box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.63);
+        text-decoration: none;
+        transition: 0.5s ease-in;
+        align-items: center;
+        &:hover {
+          display: flex;
+          color: rgb(255, 255, 255);
+          position: relative;
+          font-size: 24px;
+          left: 32%;
+          background-color: rgb(1, 0, 83);
+          border-radius: 15px;
+          padding: 2%;
+          box-shadow: 1px 1px 0.5px 1px rgba(255, 255, 255, 0.63);
+          text-decoration: none;
+          transition: 0.5s ease-out;
+        }
+      }
+    }
+
+    .galeria-novedades {
+      grid-area: area6;
+      display: flex;
+      position: relative;
+      top: 11%;
+      left: 10%;
+      width: 80%;
+      height: 75%;
+      img {
+        width: 0%;
+        height: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: 0.3s ease;
+        &:hover {
+          width: 40%;
+          opacity: 1;
+        }
+      }
+      .brimg1 {
+        border-radius: 30px 0px 0px 30px;
+      }
+      .brimg2 {
+        border-radius: 0px 30px 30px 0px;
+      }
+    }
+  }  
+}
+/*<---------------------------fin de index----------------------------->*/
