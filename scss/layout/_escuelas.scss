@@ -20,13 +20,11 @@
         position: relative;
       }
       h2 {
+        @include flex;
         font-size: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         height: 100%;
-        color: white;
+        color: $color-fuente-body;
         text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
         grid-area: area1;
         transition: 0.7s ease-in;
@@ -35,9 +33,7 @@
           background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
           background-position: 30% 40%;
           background-size: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include flex;
           color: transparent;
           text-shadow: none;
           grid-area: area1;
@@ -48,21 +44,19 @@
 
     .card-texto-arg {
       grid-area: area2;
-      display: flex;
+      @include flex;
       object-fit: cover;
       padding: 3%;
       height: 95%;
       width: 98%;
       left: 1%;
       position: relative;
-      align-items: center;
-      justify-content: center;
       flex-wrap: wrap;
       h2 {
         grid-area: area2;
-        display: flex;
+        @include flex;
         border-radius: 30px 30px 0px 0px;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
@@ -74,15 +68,13 @@
         font-size: 33px;
         padding: 4%;
         object-fit: cover;
-        align-items: center;
-        justify-content: center;
         width: 100%;
       }
       h3 {
         grid-area: area2;
         display: flex;
         border-radius: 0px 0px 30px 30px;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
@@ -142,9 +134,9 @@
       flex-wrap: wrap;
       h2 {
         grid-area: area4;
-        display: flex;
+        @include flex;
         border-radius: 30px 30px 0px 0px;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
@@ -156,14 +148,12 @@
         font-size: 20px;
         padding: 5%;
         object-fit: cover;
-        align-items: center;
-        justify-content: center;
         width: 100%;
       }
       h3 {
         grid-area: area4;
         display: flex;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         border-radius: 0px 0px 30px 30px;
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
@@ -212,21 +202,19 @@
 
     .card-texto-peru {
       grid-area: area6;
-      display: flex;
+      @include flex;
       object-fit: cover;
       padding: 4%;
       height: 95%;
       width: 98%;
       left: 1%;
       position: relative;
-      align-items: center;
-      justify-content: center;
       flex-wrap: wrap;
       h2 {
         grid-area: area6;
-        display: flex;
+        @include flex;
         border-radius: 30px 30px 0px 0px;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
@@ -238,15 +226,13 @@
         font-size: 39px;
         padding: 5%;
         object-fit: cover;
-        align-items: center;
-        justify-content: center;
         width: 100%;
       }
       h3 {
         grid-area: area6;
         display: flex;
         border-radius: 0px 0px 30px 30px;
-        color: rgb(255, 255, 255);
+        color: $color-fuente-body;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;

@@ -1,10 +1,10 @@
 /* -------------------------contacto html------------------------ */
 .gridcontacto {
-    display: flex;
+    @include flex;
     justify-content: space-around;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    flex-flow: column wrap;
+
 
     .section-contacto-left {
       display: flex;
@@ -15,16 +15,14 @@
     }
 
     .section-contacto-right {
-      display: flex;
+      @include flex;
       position: relative;
       width: 100%;
-      align-items: center;
-      justify-content: center;
-      margin-top: 0%;
+      padding: 3%;
+      
       img {
         display: flex;
         position: relative;
-        top: 15%;
         border-radius: 30px;
         width: 90%;
         height: 22rem;

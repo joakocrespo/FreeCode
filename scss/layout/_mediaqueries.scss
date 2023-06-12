@@ -1,4 +1,7 @@
-/* ----------media queries------ */
+// ----------media queries------ //
+// 
+// 
+// 
 //  -----------------index-------------//
   @media (max-width: 963px) {
     body .sectiongridmain .bienvenida-titulo h1 {
@@ -97,22 +100,26 @@
 @media (max-width: 422px) {
   body .sectiongridmain .bienvenida-titulo h1 {
     font-size: 25px;
+    height: 100%;
     &:hover {
-      font-size: 10px;
-    } 
+      font-size: 14px;
+    }
   }
   body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 7px;
+    font-size: 9px;
     &:hover {
-      font-size: 7px;
+      font-size: 8px;
     }
   }
   body .sectiongridmain .subtitulo-novedades h2{
-    font-size: 30px;
+    font-size: 25px;
+    &:hover {
+      font-size: 20px;
+    }
   }
   body .sectiongridmain .descripcion-novedades h2 {
     font-size: 9px;
-    padding: 3%;
+    padding: 1%;
   }
 }
 // 
@@ -126,18 +133,20 @@
     } 
   }
   body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 7px;
+    font-size: 6px;
     &:hover {
       font-size: 6px;
     }
   }
   body .sectiongridmain .descripcion-novedades h2 {
-    font-size: 8px;
+    font-size: 7px;
     padding: 3%;
   }
 }
 //  -----------------fin de index-------------//
-
+// 
+// 
+// 
 // -----------------destinos html------------//
 @media (max-width: 963px) {
   main .gridestinos .tittle-destinos h2 {
@@ -231,7 +240,9 @@
   }
 }
 // -------------fin destinos html------------//
-
+// 
+// 
+// 
 // -------------escuelas---------------------//
 @media (max-width: 1025px) {
   .gridescuelas .card-texto-peru h3 {
@@ -385,7 +396,9 @@
   }
 }
 // -----------fin escuelas html--------------//
-
+// 
+// 
+// 
 // -----------------wsl-----------------------//
 @media (max-width: 775px) {
   main .grid-wsl .card-section-texto h2 {
@@ -442,4 +455,53 @@
   }
 }
 // ---------------fin de wsl------------------//
-  /* --------------------fin media------------------ */
+// 
+// 
+// 
+// --------------footer----------------//
+@media (max-width: 903px) {
+  .cont-footer .botonera-footer .contac {
+    font-size: 21px;
+  &:hover {
+    font-size: 21px;
+    }
+  }
+  .cont-footer .botonera-footer .boton-footer img {
+    object-fit: contain;
+  }
+}
+// 
+// 
+// 
+@media (max-width: 645px) {
+  .cont-footer .botonera-footer {
+    grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area10";
+  }
+}
+// 
+// 
+// 
+@media (max-width: 450px) {
+  .cont-footer .botonera-footer {
+    grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area5";
+  }
+  .cont-footer .botonera-footer .contac {
+    grid-area: area5;
+    font-size: 12px;
+    height: 55%;
+    width: 55%;
+    top: 22%;
+  &:hover {
+    grid-area: area5;
+    font-size: 12px;
+    height: 55%;
+    width: 55%;
+    top: 22%;
+    }
+  }
+}
+// --------------fin de footer---------//
+// 
+// 
+// 
+  /* --------------fin media queries--------- */

@@ -24,25 +24,21 @@ main {
       }
 
       h2 {
+        @include flex;
         font-size: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         height: 100%;
-        color: white;
+        color: $color-fuente-body;
         text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
         grid-area: area1;
         transition: 0.7s ease-in;
 
         &:hover {
+          @include flex;
           font-size: 55px;
           background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
           background-position: center;
           background-size: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
           color: transparent;
           text-shadow: none;
           grid-area: area1;
@@ -62,18 +58,17 @@ main {
       position: relative;
 
       h2 {
+        @include flex;
         grid-area: area2;
-        display: flex;
         border-radius: 30px;
         color: rgb(255, 255, 255);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
-        background-color: #4a4acc;
+        background-color: $fondo-cards;
         border: 2px rgba(0, 0, 0, 0.767);
         font-size: 35px;
         padding: 3%;
         object-fit: cover;
-        align-items: center;
         text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.623);
       }
     }
@@ -131,8 +126,8 @@ main {
       }
 
       .card-1-left {
-        background-color: white;
-        color: blue;
+        background-color: $color-fuente-body;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -151,8 +146,8 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
-          color: aliceblue;
+          background-color: $fondo-cards;
+          color: $color-fuente-body;
           border: 1pz black;
           border-radius: 15px;
           justify-content: center;
@@ -169,7 +164,7 @@ main {
 
       .card-2-left {
         background-color: white;
-        color: blue;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -188,9 +183,9 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
-          color: aliceblue;
-          border: 1pz black;
+          background-color: $fondo-cards;
+          color: $color-fuente-body;
+          border: 1px black;
           border-radius: 15px;
           justify-content: center;
           border-radius: 0px 0px 15px 15px;
@@ -206,7 +201,7 @@ main {
 
       .card-3-left {
         background-color: white;
-        color: blue;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -225,8 +220,8 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
-          color: aliceblue;
+          background-color: $fondo-cards;
+          color: $color-fuente-body;
           border: 1pz black;
           border-radius: 15px;
           justify-content: center;
@@ -258,7 +253,7 @@ main {
 
       .card-1-right {
         background-color: white;
-        color: blue;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -277,7 +272,7 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
+          background-color: $fondo-cards;
           color: aliceblue;
           border: 1pz black;
           border-radius: 15px;
@@ -295,7 +290,7 @@ main {
 
       .card-2-right {
         background-color: white;
-        color: blue;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -314,7 +309,7 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
+          background-color: $fondo-cards;
           color: aliceblue;
           border: 1pz black;
           border-radius: 15px;
@@ -332,7 +327,7 @@ main {
 
       .card-3-right {
         background-color: white;
-        color: blue;
+        color: $main-color;
         display: flex;
         flex-flow: column;
         grid-area: area4;
@@ -351,8 +346,8 @@ main {
           display: flex;
           text-decoration: none;
           order: 2;
-          background-color: #4a4acc;
-          color: aliceblue;
+          background-color: $fondo-cards;
+          color: $color-fuente-body;
           border: 1pz black;
           border-radius: 15px;
           justify-content: center;

@@ -1,6 +1,6 @@
 /*<---------------------------main----------------------------------->*/
 body {
-  background-color: rgb(34, 30, 255);
+  background-color: $main-color;
   background-image: url(../assets/fondo-difuminado.jpg);
   background-repeat: repeat;
   background-position: 100%;
@@ -9,7 +9,7 @@ body {
   .sectiongridmain {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+    grid-template-rows: 4fr 4fr 2.5fr 4fr 4fr;
     grid-template-areas: "area1 area3" "area2 area3" "area4 area4" "area6 area5" "area6 area5";
     .sectiongridmain div {
       display: flex;
@@ -30,8 +30,8 @@ body {
         z-index: 3;
         transition: 0.6s ease-in;
         bottom: 10%;
-        color: white;
-        font-size: 84px;
+        color: $color-fuente-body;
+        font-size: 60px;
         left: 4%;
         bottom: 4%;
           &:hover {
@@ -45,8 +45,8 @@ body {
           justify-content: center;
           align-content: space-around;
           transition: 0.4s ease-out;
-          font-size: 49px;
-          color: #2b22a0;
+          font-size: 35px;
+          color: $main-color;
           position: relative;
           text-shadow: .5px .5px rgba(255, 255, 255, 0.815);
           z-index: 2;
@@ -78,7 +78,7 @@ body {
         padding: 4%;
         &:hover {
           font-weight: 7;
-          color: rgb(255, 255, 255);
+          color: $color-fuente-body;
           border-radius: 30px;
           box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.493);
           opacity: 100%;
@@ -88,7 +88,7 @@ body {
           font-size: 26px;
           border-style: inset;
           padding: 4%;
-          background-color: rgba(17, 62, 121, 0.884);
+          background-color: $fondo-cards;
           background-blend-mode: darken;
           height: 70%;
           object-fit: cover;
@@ -125,7 +125,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: $color-fuente-body;
         text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
         grid-area: area4;
         transition: 0.5s ease-in;
@@ -154,11 +154,11 @@ body {
       flex-flow: wrap;
       font-weight: 7;
       border-radius: 35px;
-      color: white;
+      color: $color-fuente-body;
       box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
       opacity: 85%;
       position: relative;
-      background-color: #4a4acc;
+      background-color: $fondo-cards;
       border: 2px rgba(0, 0, 0, 0.767);
       width: 79%;
       height: 75%;
@@ -168,7 +168,7 @@ body {
       h2 {
         display: flex;
         font-weight: 7;
-        color: white;
+        color: $color-fuente-body;
         font-size: 33px;
       }
       a {
@@ -187,7 +187,7 @@ body {
         align-items: center;
         &:hover {
           display: flex;
-          color: rgb(255, 255, 255);
+          color: $color-fuente-body;
           position: relative;
           font-size: 24px;
           left: 32%;

@@ -1,6 +1,6 @@
 /* <----------------------------footer------------------------------> */
 .cont-footer {
-    background-color: rgb(61, 95, 248);
+    background-color: $main-color;
     height: 100%;
     width: 100%;
     display: flex;
@@ -28,7 +28,7 @@
           position: relative;
           width: 100%;
           height: 100%;
-          padding: 20%;
+          padding: 5%;
         }
       }
 
@@ -52,7 +52,7 @@
         grid-area: area5;
         text-decoration: none;
         font-size: 30px;
-        color: aliceblue;
+        color: $color-fuente-body;
         border: 1px solid white;
         border-radius: 15px;
         height: 70%;
@@ -66,9 +66,9 @@
           grid-area: area5;
           text-decoration: none;
           font-size: 33px;
-          color: rgb(61, 95, 248);
+          color: $main-color;
           border: 1px solid white;
-          background-color: aliceblue;
+          background-color: $color-fuente-body;
           border-radius: 15px;
           height: 72%;
           width: 72%;

@@ -2,7 +2,7 @@
 header { 
   nav {
     display: flex;
-    background-color: rgb(61, 95, 248);
+    background-color: $main-color;
     height: 4rem;
     display: flex;
     align-items: center;
@@ -13,25 +13,29 @@ header {
       flex-flow: row;
       list-style: none;
       align-items: center;
-      gap: 1rem;
+      gap: 0.1rem;
       display: flex;
-      padding-right: 1rem;
+      padding-right: 2.5rem;
       position: relative;
+    }
+
+    li {
+      padding: 10%;
     }
 
     a {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       text-decoration: none;
-      color: white;
+      color: $color-fuente-body;
       font-size: 18px;
       border: 0.5px transparent;
       border-radius: 10px;
-      padding: 10px;
+      padding: 0px;
       transition: 0.5s;
       
       &:hover {
-        color: rgb(61, 95, 248);
-        background-color: aliceblue;
+        color: $main-color;
+        background-color: $color-fuente-body;
       }
     }
     
@@ -42,21 +46,22 @@ header {
 
     .show-menu {
       display: flex;
+      z-index: 4;
 
       &:hover .submenu {
         display: block;
       }
 
       .submenu {
-         right: 33%;
+         right: 55%;
          border-radius: 0px 0px 10px 10px;
          padding: 0%;
-         background-color: rgb(61, 95, 248);
-         top: 46px;
+         background-color: $main-color;
+         top: 65px;
          z-index: 1;
          position: absolute;
          display: none;
-         width: 24%;
+         width: 100%;
 
          a {
           display: flex;
@@ -68,15 +73,14 @@ header {
     .botonera-wsl-contacto {
       gap: 1rem;
       display: flex;
-      padding-right: 1rem;
+      padding-right: 3rem;
       position: relative;
-      margin-bottom: 0%;
-
-      .submenu {
-        right: 148px;
-      }
+      top: 12%;
     }    
   }  
 }
-   
-  /* <!--------------------fin barra de navegacion --------------------> */
+// ---Fin de Pisando "nav-ul" del Html "Contacto" y "WSL" por una clase de Bootstrap----//
+// 
+// 
+// 
+// <!--------------------fin barra de navegacion --------------------> */

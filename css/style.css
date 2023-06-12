@@ -19,10 +19,13 @@ header nav ul {
   flex-flow: row;
   list-style: none;
   align-items: center;
-  gap: 1rem;
+  gap: 0.1rem;
   display: flex;
-  padding-right: 1rem;
+  padding-right: 2.5rem;
   position: relative;
+}
+header nav li {
+  padding: 10%;
 }
 header nav a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,12 +34,12 @@ header nav a {
   font-size: 18px;
   border: 0.5px transparent;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0px;
   transition: 0.5s;
 }
 header nav a:hover {
   color: rgb(61, 95, 248);
-  background-color: aliceblue;
+  background-color: white;
 }
 header nav img {
   display: flex;
@@ -44,20 +47,21 @@ header nav img {
 }
 header nav .show-menu {
   display: flex;
+  z-index: 4;
 }
 header nav .show-menu:hover .submenu {
   display: block;
 }
 header nav .show-menu .submenu {
-  right: 33%;
+  right: 55%;
   border-radius: 0px 0px 10px 10px;
   padding: 0%;
   background-color: rgb(61, 95, 248);
-  top: 46px;
+  top: 65px;
   z-index: 1;
   position: absolute;
   display: none;
-  width: 24%;
+  width: 100%;
 }
 header nav .show-menu .submenu a {
   display: flex;
@@ -66,15 +70,11 @@ header nav .show-menu .submenu a {
 header nav .botonera-wsl-contacto {
   gap: 1rem;
   display: flex;
-  padding-right: 1rem;
+  padding-right: 3rem;
   position: relative;
-  margin-bottom: 0%;
-}
-header nav .botonera-wsl-contacto .submenu {
-  right: 148px;
+  top: 12%;
 }
 
-/* <!--------------------fin barra de navegacion --------------------> */
 /* <----------------------------footer------------------------------> */
 .cont-footer {
   background-color: rgb(61, 95, 248);
@@ -105,7 +105,7 @@ header nav .botonera-wsl-contacto .submenu {
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 20%;
+  padding: 5%;
 }
 .cont-footer .botonera-footer .insta {
   grid-area: area1;
@@ -123,7 +123,7 @@ header nav .botonera-wsl-contacto .submenu {
   grid-area: area5;
   text-decoration: none;
   font-size: 30px;
-  color: aliceblue;
+  color: white;
   border: 1px solid white;
   border-radius: 15px;
   height: 70%;
@@ -139,7 +139,7 @@ header nav .botonera-wsl-contacto .submenu {
   font-size: 33px;
   color: rgb(61, 95, 248);
   border: 1px solid white;
-  background-color: aliceblue;
+  background-color: white;
   border-radius: 15px;
   height: 72%;
   width: 72%;
@@ -152,7 +152,7 @@ header nav .botonera-wsl-contacto .submenu {
 /*<---------------------------fin de footer----------------------------->*/
 /*<---------------------------main----------------------------------->*/
 body {
-  background-color: rgb(34, 30, 255);
+  background-color: rgb(61, 95, 248);
   background-image: url(../assets/fondo-difuminado.jpg);
   background-repeat: repeat;
   background-position: 100%;
@@ -161,7 +161,7 @@ body {
 body .sectiongridmain {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 2fr 1.5fr 2fr 2fr;
+  grid-template-rows: 4fr 4fr 2.5fr 4fr 4fr;
   grid-template-areas: "area1 area3" "area2 area3" "area4 area4" "area6 area5" "area6 area5";
 }
 body .sectiongridmain .sectiongridmain div {
@@ -185,7 +185,7 @@ body .sectiongridmain .bienvenida-titulo h1 {
   transition: 0.6s ease-in;
   bottom: 10%;
   color: white;
-  font-size: 84px;
+  font-size: 60px;
   left: 4%;
   bottom: 4%;
 }
@@ -200,8 +200,8 @@ body .sectiongridmain .bienvenida-titulo h1:hover {
   justify-content: center;
   align-content: space-around;
   transition: 0.4s ease-out;
-  font-size: 49px;
-  color: #2b22a0;
+  font-size: 35px;
+  color: rgb(61, 95, 248);
   position: relative;
   text-shadow: 0.5px 0.5px rgba(255, 255, 255, 0.815);
   z-index: 2;
@@ -230,7 +230,7 @@ body .sectiongridmain .bienvenida-descripcion h2 {
 }
 body .sectiongridmain .bienvenida-descripcion h2:hover {
   font-weight: 7;
-  color: rgb(255, 255, 255);
+  color: white;
   border-radius: 30px;
   box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.493);
   opacity: 100%;
@@ -240,7 +240,7 @@ body .sectiongridmain .bienvenida-descripcion h2:hover {
   font-size: 26px;
   border-style: inset;
   padding: 4%;
-  background-color: rgba(17, 62, 121, 0.884);
+  background-color: #4a4acc;
   background-blend-mode: darken;
   height: 70%;
   object-fit: cover;
@@ -337,7 +337,7 @@ body .sectiongridmain .descripcion-novedades a {
 }
 body .sectiongridmain .descripcion-novedades a:hover {
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
   position: relative;
   font-size: 24px;
   left: 32%;
@@ -400,10 +400,10 @@ main .gridestinos .tittle-destinos img {
   position: relative;
 }
 main .gridestinos .tittle-destinos h2 {
-  font-size: 55px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 55px;
   width: 100%;
   height: 100%;
   color: white;
@@ -412,13 +412,13 @@ main .gridestinos .tittle-destinos h2 {
   transition: 0.7s ease-in;
 }
 main .gridestinos .tittle-destinos h2:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 55px;
   background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
   background-position: center;
   background-size: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: transparent;
   text-shadow: none;
   grid-area: area1;
@@ -435,8 +435,10 @@ main .gridestinos .top-section-text {
   position: relative;
 }
 main .gridestinos .top-section-text h2 {
-  grid-area: area2;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: area2;
   border-radius: 30px;
   color: rgb(255, 255, 255);
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
@@ -446,7 +448,6 @@ main .gridestinos .top-section-text h2 {
   font-size: 35px;
   padding: 3%;
   object-fit: cover;
-  align-items: center;
   text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.623);
 }
 main .gridestinos .top-section-pics {
@@ -497,7 +498,7 @@ main .gridestinos .bottom-section-cards-left div {
 }
 main .gridestinos .bottom-section-cards-left .card-1-left {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -516,7 +517,7 @@ main .gridestinos .bottom-section-cards-left .card-1-left a {
   text-decoration: none;
   order: 2;
   background-color: #4a4acc;
-  color: aliceblue;
+  color: white;
   border: 1pz black;
   border-radius: 15px;
   justify-content: center;
@@ -530,7 +531,7 @@ main .gridestinos .bottom-section-cards-left .card-1-left h3 {
 }
 main .gridestinos .bottom-section-cards-left .card-2-left {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -549,8 +550,8 @@ main .gridestinos .bottom-section-cards-left .card-2-left a {
   text-decoration: none;
   order: 2;
   background-color: #4a4acc;
-  color: aliceblue;
-  border: 1pz black;
+  color: white;
+  border: 1px black;
   border-radius: 15px;
   justify-content: center;
   border-radius: 0px 0px 15px 15px;
@@ -563,7 +564,7 @@ main .gridestinos .bottom-section-cards-left .card-2-left h3 {
 }
 main .gridestinos .bottom-section-cards-left .card-3-left {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -582,7 +583,7 @@ main .gridestinos .bottom-section-cards-left .card-3-left a {
   text-decoration: none;
   order: 2;
   background-color: #4a4acc;
-  color: aliceblue;
+  color: white;
   border: 1pz black;
   border-radius: 15px;
   justify-content: center;
@@ -609,7 +610,7 @@ main .gridestinos .bottom-section-cards-right div {
 }
 main .gridestinos .bottom-section-cards-right .card-1-right {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -642,7 +643,7 @@ main .gridestinos .bottom-section-cards-right .card-1-right h3 {
 }
 main .gridestinos .bottom-section-cards-right .card-2-right {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -675,7 +676,7 @@ main .gridestinos .bottom-section-cards-right .card-2-right h3 {
 }
 main .gridestinos .bottom-section-cards-right .card-3-right {
   background-color: white;
-  color: blue;
+  color: rgb(61, 95, 248);
   display: flex;
   flex-flow: column;
   grid-area: area4;
@@ -694,7 +695,7 @@ main .gridestinos .bottom-section-cards-right .card-3-right a {
   text-decoration: none;
   order: 2;
   background-color: #4a4acc;
-  color: aliceblue;
+  color: white;
   border: 1pz black;
   border-radius: 15px;
   justify-content: center;
@@ -731,10 +732,10 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
   position: relative;
 }
 .gridescuelas .escuelas-titulo h2 {
-  font-size: 55px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  font-size: 55px;
   width: 100%;
   height: 100%;
   color: white;
@@ -748,8 +749,8 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
   background-position: 30% 40%;
   background-size: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   color: transparent;
   text-shadow: none;
   grid-area: area1;
@@ -758,21 +759,23 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
 .gridescuelas .card-texto-arg {
   grid-area: area2;
   display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
   padding: 3%;
   height: 95%;
   width: 98%;
   left: 1%;
   position: relative;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .gridescuelas .card-texto-arg h2 {
   grid-area: area2;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px 30px 0px 0px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
   position: relative;
@@ -784,15 +787,13 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
   font-size: 33px;
   padding: 4%;
   object-fit: cover;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .gridescuelas .card-texto-arg h3 {
   grid-area: area2;
   display: flex;
   border-radius: 0px 0px 30px 30px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
   position: relative;
@@ -851,8 +852,10 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
 .gridescuelas .card-texto-brasil h2 {
   grid-area: area4;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px 30px 0px 0px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
   position: relative;
@@ -864,14 +867,12 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
   font-size: 20px;
   padding: 5%;
   object-fit: cover;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .gridescuelas .card-texto-brasil h3 {
   grid-area: area4;
   display: flex;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   border-radius: 0px 0px 30px 30px;
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
@@ -918,21 +919,23 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
 .gridescuelas .card-texto-peru {
   grid-area: area6;
   display: flex;
+  justify-content: center;
+  align-items: center;
   object-fit: cover;
   padding: 4%;
   height: 95%;
   width: 98%;
   left: 1%;
   position: relative;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .gridescuelas .card-texto-peru h2 {
   grid-area: area6;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px 30px 0px 0px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
   position: relative;
@@ -944,15 +947,13 @@ main .gridestinos .bottom-section-cards-right .card-3-right h3 {
   font-size: 39px;
   padding: 5%;
   object-fit: cover;
-  align-items: center;
-  justify-content: center;
   width: 100%;
 }
 .gridescuelas .card-texto-peru h3 {
   grid-area: area6;
   display: flex;
   border-radius: 0px 0px 30px 30px;
-  color: rgb(255, 255, 255);
+  color: white;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
   box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
   position: relative;
@@ -1023,8 +1024,8 @@ main .grid-wsl .titulo-section-wsl img {
 main .grid-wsl .titulo-section-wsl h2 {
   font-size: 55px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: white;
@@ -1055,14 +1056,14 @@ main .grid-wsl .card-section-texto {
 }
 main .grid-wsl .card-section-texto h2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   width: 90%;
   height: 83%;
   padding: 10% 1% 10% 5%;
   background-color: white;
   border-radius: 30px 0px 0px 30px;
-  justify-content: center;
-  align-items: center;
 }
 main .grid-wsl .card-imagen {
   grid-area: area3;
@@ -1099,8 +1100,8 @@ main .grid-wsl .subtitulo-section-wsl img {
 main .grid-wsl .subtitulo-section-wsl h2 {
   font-size: 55px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   color: white;
@@ -1131,14 +1132,14 @@ main .grid-wsl .card-bottom-section-texto-top {
 }
 main .grid-wsl .card-bottom-section-texto-top h2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   width: 90%;
   height: 83%;
   padding: 10% 1% 10% 5%;
   background-color: white;
   border-radius: 30px 0px 0px 30px;
-  justify-content: center;
-  align-items: center;
 }
 main .grid-wsl .card-bottom-section-pic-top {
   grid-area: area6;
@@ -1167,14 +1168,14 @@ main .grid-wsl .card-bottom-section-texto-middle {
 }
 main .grid-wsl .card-bottom-section-texto-middle h2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   width: 90%;
   height: 83%;
   padding: 10% 1% 10% 5%;
   background-color: white;
   border-radius: 30px 0px 0px 30px;
-  justify-content: center;
-  align-items: center;
 }
 main .grid-wsl .card-bottom-section-pic-middle {
   grid-area: area8;
@@ -1202,14 +1203,14 @@ main .grid-wsl .card-bottom-section-texto-bottom {
 }
 main .grid-wsl .card-bottom-section-texto-bottom h2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 42px;
   width: 90%;
   height: 83%;
   padding: 10% 1% 10% 5%;
   background-color: white;
   border-radius: 30px 0px 0px 30px;
-  justify-content: center;
-  align-items: center;
 }
 main .grid-wsl .card-bottom-section-pic-bottom {
   grid-area: area10;
@@ -1227,15 +1228,87 @@ main .grid-wsl .card-bottom-section-pic-bottom img {
   height: 83%;
   border-radius: 0px 30px 30px 0px;
 }
+main .fondo-eeuu {
+  background-image: url(../assets/bandera-eeuu-wsl.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px 1px;
+  font-weight: 7%;
+  color: orange;
+}
+main .fondo-ripcurl {
+  background-image: url(../assets/wsl-ripcurl.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px 1px;
+  font-weight: 7%;
+  color: white;
+}
+main .fondo-inglaterra {
+  background-image: url(../assets/bandera-inglaterra-wsl.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px 1px black;
+  font-weight: 7%;
+  color: white;
+}
+main .fondo-billabong {
+  background-image: url(../assets/wsl-Billabong.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: white 1px 1px 1px 1px;
+  font-weight: 7%;
+}
+main .fondo-brasil {
+  background-image: url(../assets/bandera-brasil-wsl.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: white 1px 1px 1px 1px;
+  font-weight: 7%;
+  color: white;
+}
+main .fondo-volcom {
+  background-image: url(../assets/wsl-volcom.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  justify-content: center;
+  font-size: 18px;
+  text-shadow: white 1px 1px 1px 1px;
+  font-weight: 7%;
+  color: white;
+}
 
 /* ----------------------------fin wsl html---------------------- */
 /* -------------------------contacto html------------------------ */
 .gridcontacto {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-flow: column wrap;
 }
 .gridcontacto .section-contacto-left {
   display: flex;
@@ -1246,23 +1319,21 @@ main .grid-wsl .card-bottom-section-pic-bottom img {
 }
 .gridcontacto .section-contacto-right {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0%;
+  padding: 3%;
 }
 .gridcontacto .section-contacto-right img {
   display: flex;
   position: relative;
-  top: 15%;
   border-radius: 30px;
   width: 90%;
   height: 22rem;
 }
 
 /* ---------------------------fin de contacto html---------------------------- */
-/* ----------media queries------ */
 @media (max-width: 963px) {
   body .sectiongridmain .bienvenida-titulo h1 {
     font-size: 54px;
@@ -1347,22 +1418,26 @@ main .grid-wsl .card-bottom-section-pic-bottom img {
 @media (max-width: 422px) {
   body .sectiongridmain .bienvenida-titulo h1 {
     font-size: 25px;
+    height: 100%;
   }
   body .sectiongridmain .bienvenida-titulo h1:hover {
-    font-size: 10px;
+    font-size: 14px;
   }
   body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 7px;
+    font-size: 9px;
   }
   body .sectiongridmain .bienvenida-descripcion h2:hover {
-    font-size: 7px;
+    font-size: 8px;
   }
   body .sectiongridmain .subtitulo-novedades h2 {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  body .sectiongridmain .subtitulo-novedades h2:hover {
+    font-size: 20px;
   }
   body .sectiongridmain .descripcion-novedades h2 {
     font-size: 9px;
-    padding: 3%;
+    padding: 1%;
   }
 }
 @media (max-width: 367px) {
@@ -1373,13 +1448,13 @@ main .grid-wsl .card-bottom-section-pic-bottom img {
     font-size: 10px;
   }
   body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 7px;
+    font-size: 6px;
   }
   body .sectiongridmain .bienvenida-descripcion h2:hover {
     font-size: 6px;
   }
   body .sectiongridmain .descripcion-novedades h2 {
-    font-size: 8px;
+    font-size: 7px;
     padding: 3%;
   }
 }
@@ -1641,6 +1716,41 @@ main .grid-wsl .card-bottom-section-pic-bottom img {
     font-size: 20px;
   }
 }
-/* --------------------fin media------------------ */
+@media (max-width: 903px) {
+  .cont-footer .botonera-footer .contac {
+    font-size: 21px;
+  }
+  .cont-footer .botonera-footer .contac:hover {
+    font-size: 21px;
+  }
+  .cont-footer .botonera-footer .boton-footer img {
+    object-fit: contain;
+  }
+}
+@media (max-width: 645px) {
+  .cont-footer .botonera-footer {
+    grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area10";
+  }
+}
+@media (max-width: 450px) {
+  .cont-footer .botonera-footer {
+    grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area5";
+  }
+  .cont-footer .botonera-footer .contac {
+    grid-area: area5;
+    font-size: 12px;
+    height: 55%;
+    width: 55%;
+    top: 22%;
+  }
+  .cont-footer .botonera-footer .contac:hover {
+    grid-area: area5;
+    font-size: 12px;
+    height: 55%;
+    width: 55%;
+    top: 22%;
+  }
+}
+/* --------------fin media queries--------- */
 
 /*# sourceMappingURL=style.css.map */
