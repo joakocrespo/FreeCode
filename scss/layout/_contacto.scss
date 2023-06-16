@@ -14,13 +14,12 @@
 
     .section-contacto-right {
       @include flex;
-      position: relative;
       width: 100%;
       padding: 3%;
       
       img {
         display: flex;
-        position: relative;
+        object-fit: cover;
         border-radius: 30px;
         width: 90%;
         height: 22rem;

@@ -76,6 +76,32 @@ header {
       padding-right: 3rem;
       position: relative;
       top: 12%;
+      
+      .show-menu-contacto-wsl {
+      display: flex;
+      z-index: 4;
+
+      &:hover .submenu {
+        display: block;
+      }
+
+      .submenu {
+         right: 50%;
+         border-radius: 0px 0px 10px 10px;
+         padding: 0%;
+         background-color: $main-color;
+         top: 65px;
+         z-index: 1;
+         position: absolute;
+         display: none;
+         width: 75%;
+
+         a {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
     }    
   }  
 }

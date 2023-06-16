@@ -8,7 +8,7 @@
     .escuelas-titulo {
       grid-area: area1;
       display: flex;
-      background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+      background-image: url(../assets/fondo-titulo-escuelas.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 30% 35%;
@@ -30,7 +30,7 @@
         transition: 0.7s ease-in;
         &:hover {
           font-size: 55px;
-          background-image: url(../assets/331233365_1900144760323632_3214956950061404745_n.jpg);
+          background-image: url(../assets/fondo-titulo-escuelas.jpg);
           background-position: 30% 40%;
           background-size: 100%;
           @include flex;
@@ -60,7 +60,7 @@
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
-        background-image: url(../assets/bandera-argentina-ST-1280x720.jpg);
+        background-image: url(../assets/cards-bandera-argentina.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -140,7 +140,7 @@
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
-        background-image: url(../assets/bandera-de-brasil-ST.jpg);
+        background-image: url(../assets/cards-bandera-brasil.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -218,7 +218,7 @@
         text-shadow: 2px 2px rgba(0, 0, 0, 0.767);
         box-shadow: 2px 0px 1px 2px rgba(0, 0, 0, 0.582);
         position: relative;
-        background-image: url(../assets/bandera-peru-FB.jpg);
+        background-image: url(../assets/cards-bandera-peru.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;

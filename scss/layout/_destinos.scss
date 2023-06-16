@@ -10,7 +10,7 @@ main {
     .tittle-destinos {
       grid-area: area1;
       display: flex;
-      background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
+      background-image: url(../assets/fondo-titulo-destinos.jpg);
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
@@ -36,7 +36,7 @@ main {
         &:hover {
           @include flex;
           font-size: 55px;
-          background-image: url(../assets/istockphoto-1165204238-612x612.jpg);
+          background-image: url(../assets/fondo-titulo-destinos.jpg);
           background-position: center;
           background-size: 100%;
           color: transparent;

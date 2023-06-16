@@ -9,7 +9,7 @@ main {
     .titulo-section-wsl {
       grid-area: area1;
       display: flex;
-      background-image: url(../assets/World_Surf_League_Logo.png);
+      background-image: url(../assets/fondo-titulo-wsl.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -31,7 +31,7 @@ main {
         transition: 0.7s ease-in;
         &:hover {
           font-size: 55px;
-          background-image: url(../assets/WSL.png);
+          background-image: url(../assets/fondo-titulo-wsl.png);
           background-position: center;
           background-size: 100%;
           display: flex;
@@ -84,7 +84,7 @@ main {
     .subtitulo-section-wsl {
       grid-area: area4;
       display: flex;
-      background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+      background-image: url(../assets/fondo-subtitulo-wsl.webp);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 100%;
@@ -106,7 +106,7 @@ main {
         transition: 0.7s ease-in;
         &:hover {
           font-size: 55px;
-          background-image: url(../assets/Surf-Pro-April-2015-Photo-Elements-Margaret-River-120-1-scaled.webp);
+          background-image: url(../assets/fondo-subtitulo-wsl.webp);
           background-position: center;
           background-size: 100%;
           display: flex;
