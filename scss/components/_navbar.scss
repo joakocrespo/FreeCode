@@ -1,26 +1,32 @@
 /* <!---------------------- barra de navegacion ---------------------> */
-header { 
+header {
   nav {
     display: flex;
     background-color: $main-color;
     height: 4rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: end;
 
-    ul {
+    .botonera {
       display: flex;
       flex-flow: row;
       list-style: none;
+      justify-content: space-between;
       align-items: center;
-      gap: 0.1rem;
       display: flex;
-      padding-right: 2.5rem;
-      position: relative;
+      height: 4rem;
+      width: 100%;
     }
 
     li {
-      padding: 10%;
+
+      list-style: none;
+      padding: 1%;
+    }
+
+    .contenedor-logo-header {
+      display: flex;
     }
 
     a {
@@ -30,18 +36,22 @@ header {
       font-size: 18px;
       border: 0.5px transparent;
       border-radius: 10px;
-      padding: 0px;
+      padding: 3px;
       transition: 0.5s;
-      
+
       &:hover {
         color: $main-color;
         background-color: $color-fuente-body;
       }
     }
-    
+
     img {
-      display: flex;
       height: 3rem;
+    }
+
+    .logo-png-header {
+      width: 7rem;
+      border-radius: 65%;
     }
 
     .show-menu {
@@ -53,58 +63,68 @@ header {
       }
 
       .submenu {
-         right: 55%;
-         border-radius: 0px 0px 10px 10px;
-         padding: 0%;
-         background-color: $main-color;
-         top: 65px;
-         z-index: 1;
-         position: absolute;
-         display: none;
-         width: 100%;
+        right: 0%;
+        border-radius: 0px 0px 10px 10px;
+        padding: 1%;
+        background-image: linear-gradient($main-color, rgb(103, 130, 168));
+        top: 63px;
+        z-index: 1;
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 120px;
 
-         a {
+        a {
           display: flex;
           justify-content: center;
         }
       }
     }
-// --------Pisando "nav-ul" del Html "Contacto" y "WSL" por una clase de Bootstrap----------//
+
+    // --------Pisando "nav-ul" del Html "Contacto" y "WSL" por una clase de Bootstrap----------//
     .botonera-wsl-contacto {
-      gap: 1rem;
       display: flex;
-      padding-right: 3rem;
+      flex-flow: row;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      height: 4rem;
+      width: 100%;
       position: relative;
-      top: 12%;
-      
+      left: -1rem;
+      top: 9px;
+
       .show-menu-contacto-wsl {
-      display: flex;
-      z-index: 4;
+        display: flex;
+        z-index: 4;
 
-      &:hover .submenu {
-        display: block;
-      }
+        &:hover .submenu {
+          display: block;
+          top: 3.5rem;
+        }
 
-      .submenu {
-         right: 50%;
-         border-radius: 0px 0px 10px 10px;
-         padding: 0%;
-         background-color: $main-color;
-         top: 65px;
-         z-index: 1;
-         position: absolute;
-         display: none;
-         width: 75%;
+        .submenu {
+          right: 0%;
+          border-radius: 0px 0px 10px 10px;
+          padding: 1%;
+          background-image: linear-gradient($main-color, rgb(103, 130, 168));
+          top: 64px;
+          z-index: 1;
+          position: absolute;
+          display: none;
+          list-style: none;
+          width: 120px;
 
-         a {
-          display: flex;
-          justify-content: center;
+          a {
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }
-    }    
-  }  
+  }
 }
+
 // ---Fin de Pisando "nav-ul" del Html "Contacto" y "WSL" por una clase de Bootstrap----//
 // 
 // 

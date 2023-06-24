@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Surf, Viajes, Deporte extremo, Trip, Surftrip, Surfhouse, North Shore, Teahuppo, Maui, Puerto Escondido, Escuelas de surf">
+    <meta name="description"
+        content="Disfruta viajes de Surf a nivel mundial, asi como escuelas del mas alto nivel en el deporte.">
     <title>World Surf Trip</title>
     <!-----link a css-------->
     <link rel="stylesheet" href="./css/style.css">
-    <!----------icono pestaña-----------> 
+    <!----------icono pestaña----------->
     <link rel="icon" type="image/png" href="./assets/logo-wst.png">
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap" rel="stylesheet">
+    <!-- link cdn animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
 
     <!---------------------- barra de navegacion --------------------->
@@ -17,76 +29,85 @@
 
     <header>
         <nav>
-            <ul class="botonera">            
+            <ul class="botonera">
+                <li class="logo-png-header">
+                    <img src="./assets/logo-wst.png" alt="Logo de la empresa World Surf Trip">
+                </li>
                 <li class="show-menu">
-                   <img src="./assets/menu-hambur.png.png" alt="Menu hamburguesa formato png">
+                    <img src="./assets/menu-hambur.png.png" alt="Menu hamburguesa formato png">
                     <ul class="submenu">
                         <li>
                             <a href="./index.html">Inicio</a>
                         </li>
                         <li>
-                            <a href="./pages/destinosfreecode.html">Destinos</a> 
-                         </li>
-                         <li>
-                            <a href="./pages/escuelasfreecode.html">Escuelas</a> 
-                         </li>
-                         <li>
-                            <a href="./pages/wslfreecode.html">WSL</a> 
-                         </li>
-                    </ul> 
-                </li>
-                <li>
-                    <img src="./assets/logo-wst.png" alt="Logo de la empresa World Surf Trip">
+                            <a href="./pages/destinosfreecode.html">Destinos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/escuelasfreecode.html">Escuelas</a>
+                        </li>
+                        <li>
+                            <a href="./pages/wslfreecode.html">WSL</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </nav>
-    </header>    
+    </header>
 
 
-   <!---------------------------- main contenido--------------------------->
+    <!---------------------------- main contenido--------------------------->
 
     <main>
-        <section class="sectiongridmain">
-            <div class="bienvenida-titulo">
-                <h1>Bienvenido a World Surf Trip</h1>
+        <section class="encabezado-index">
+            <div class="animate__animated animate__fadeInLeft bienvenida-encabezado">
+                <h1>
+                    ¡Bienvenido a World Surf Trip!
+                </h1>
             </div>
-            <div class="bienvenida-descripcion">
-                 <h2>Somos una empresa dedicada al fomento del Surf y al estilo de vida que este deporte conlleva. En nuestro sitio podras encontrar packs de viajes en los mejores spots para todos los niveles. Asi como escuelas del mas alto nivel.</h2>
-            </div>
-            <div class="bienvenida-pic">
-                <img src="./assets/imagen-main-top.png" alt="Surfista dropeando una ola formato png">
-            </div>
-            <div class="subtitulo-novedades">
+            <div class="animate__animated animate__fadeInLeft descripcion-encabezado-index">
                 <h2>
-                    Novedades
+                    Somos una empresa dedicada al fomento del Surf y al estilo de vida que este deporte conlleva. En
+                    nuestro sitio podras encontrar packs de viajes en los mejores spots para todos los niveles. Asi como
+                    escuelas del mas alto nivel.
                 </h2>
             </div>
+        </section>
+        <section class="subtitulo-index">
+            <h3>
+                Novedades
+            </h3>
+        </section>
+        <section class="contenido-novedades">
             <div class="descripcion-novedades">
-                <h3>
-                    Se acerca la temporada de olas en Australia y el Margaret River Pro al oeste del pais se prepara para recibir a la WSL. Enormes marejadas, aguas frias, tiburones y olas increibles es parte de lo que se espera para la proxima fecha de la WSL.
-                </h3>
-                <a href="./pages/wslfreecode.html">Saber más.</a>
+                <h4>
+                    Se acerca la temporada de olas en Australia y el Margaret River Pro al oeste del pais se prepara
+                    para recibir a la WSL. Enormes marejadas, aguas frias, tiburones y olas increibles es parte de lo
+                    que se espera para la proxima fecha de la WSL.
+                </h4>
             </div>
             <div class="galeria-novedades">
-                <img src="./assets/galeria-main-bottom-tubaso.jpg" class="brimg1" alt="Surfista pegando tubaso">
-                <img src="./assets/galeria-main-bottom-lipaso.png" alt="Sufista pegandole al labio de la ola">
-                <img src="./assets/galeria-main-bottom-rider-esperando.png" alt="Surfista esperando la serie">
-                <img src="./assets/galeria-main-bottom-filtrada-tortuga.jpg" class="brimg2" alt="Surfista filtrando una ola">
+                <img class="border-rad-galeria-left" src="./assets/galeria-main-bottom-lipaso.png" alt="">
+                <img src="./assets/galeria-main-bottom-filtrada-tortuga.jpg" alt="">
+                <img src="./assets/galeria-main-bottom-rider-esperando.png" alt="">
+                <img class="border-rad-galeria-right" src="./assets/galeria-main-bottom-tubaso.jpg" alt="">
             </div>
         </section>
     </main>
 
-<!------------------------Footer------------------------->
+    <!------------------------Footer------------------------->
 
-<footer class="cont-footer">
-    <div class="botonera-footer">
-        <a href="./pages/contactofreecode.html" class="boton-footer insta"><img src="./assets/instagram.png" alt=""></a>
-        <a href="./pages/contactofreecode.html" class="boton-footer facebo"><img src="./assets/facebook.png" alt=""></a>
-        <a href="./pages/contactofreecode.html" class="boton-footer twitt"><img src="./assets/gorjeo.png" alt=""></a>
-        <a href="./pages/contactofreecode.html" class="boton-footer gmail"><img src="./assets/gmail.png" alt=""></a>
-        <a href="./pages/contactofreecode.html" class="boton-footer contac">Contacto</a>
-    </div>
-</footer>
+    <footer class="cont-footer">
+        <div class="botonera-footer">
+            <a href="./pages/contactofreecode.html" class="boton-footer insta"><img src="./assets/instagram.png"
+                    alt=""></a>
+            <a href="./pages/contactofreecode.html" class="boton-footer facebo"><img src="./assets/facebook.png"
+                    alt=""></a>
+            <a href="./pages/contactofreecode.html" class="boton-footer twitt"><img src="./assets/gorjeo.png"
+                    alt=""></a>
+            <a href="./pages/contactofreecode.html" class="boton-footer gmail"><img src="./assets/gmail.png" alt=""></a>
+            <a href="./pages/contactofreecode.html" class="boton-footer contac">Contacto</a>
+        </div>
+    </footer>
 
 </body>
 

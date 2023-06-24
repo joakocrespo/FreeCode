@@ -3,471 +3,244 @@
 // 
 // 
 //  -----------------index-------------//
-  @media (max-width: 963px) {
-    body .sectiongridmain .bienvenida-titulo h1 {
-      font-size: 58px;
-    }
+@media (min-width: 540px) {
+  body main .encabezado-index {
+    background-repeat: no-repeat;
+    background-position-x: 3rem;
+  }
 
-    body .sectiongridmain .bienvenida-descripcion h2 {
-      font-size: 21px;
-    }
-    body .sectiongridmain .subtitulo-novedades h2{
-      font-size: 54px;
-      &:hover {
-        font-size: 54px;
-      }
-    }
-    body .sectiongridmain .descripcion-novedades h3 {
-      font-size: 25px;
-    }
-    body .sectiongridmain .descripcion-novedades a {
-    font-size: 17px;
+  body main .encabezado-index .bienvenida-encabezado h1 {
+    font-size: 35px;
+  }
+
+  body main .encabezado-index .descripcion-encabezado-index h2 {
+    font-size: 25px;
+  }
+
+  body main .subtitulo-index {
+    background-position: center;
+
+    h3 {
+      font-size: 55px;
     }
   }
-//
-// 
-//  
-@media (max-width: 775px) {
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 48px;
-  }
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 19px;
-  }
-  body .sectiongridmain .subtitulo-novedades h2{
-    font-size: 70px;
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
+
+  body main .contenido-novedades .descripcion-novedades h4 {
     font-size: 24px;
   }
-  body .sectiongridmain .descripcion-novedades a {
-    font-size: 14px;
-    &:hover {
-      font-size: 14px;
-    }
-  }
 }
+
 // 
 // 
 // 
-@media (max-width: 691px) {
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 42px;
-  }
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 17px;
-  }
-  body .sectiongridmain .subtitulo-novedades h2{
-    font-size: 55px;
-    &:hover {
-      font-size: 40px;
-    }
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
-    font-size: 23px;
-  }
-  body .sectiongridmain .descripcion-novedades a {
-    font-size: 13px;
-    padding: 4%;
-    &:hover {
-      font-size: 13px;
-      padding: 4%;
-    }
-  }
-}
-// 
-// 
-// 
-@media (max-width: 606px) {
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 40px;
-  } 
-  body .sectiongridmain .bienvenida-descripcion {
-    padding: 30px;
-    width: 335px;
-  }
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 18px;
-  }
-  .bienvenida-pic {
-    grid-area: area3;
-    display: flex;
-    z-index: -1;
-    width: 800px;
-    height: 100%;
-    object-fit: cover;
-    img {
-      position: relative;
-      width: 500px;
-      height: 100%;
-      object-fit: none;
-      overflow: hidden;
-    }
-  }
-  body .sectiongridmain .subtitulo-novedades h2{
-    font-size: 40px;
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
-    font-size: 21px;
-  }
-  body .sectiongridmain .descripcion-novedades a {
-    font-size: 11px;
-    padding: 4%;
-    &:hover {
-      font-size: 11px;
-      padding: 4%;
-    }
-  }
-}
-// 
-// 
-//
-@media (max-width: 500px) {
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 35px;
-  } 
-  body .sectiongridmain .bienvenida-descripcion {
-    padding: 20px;
-    width: 268px;
-    height: 100%;
-  }
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 18px;
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
-    font-size: 18px;
-    padding: 5%;
-  }
-  body .sectiongridmain .descripcion-novedades a {
-    font-size: 9px;
-    padding: 4%;
-    &:hover {
-      font-size: 9px;
-      padding: 4%;
-    }
-  }
-}
-// 
-// 
-//  
-@media (max-width: 422px) {
-  body .sectiongridmain .bienvenida-titulo {
-    padding: 20px;
-    align-items: center;
-  }
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 25px;
-    height: 100%;
-  }
-  body .sectiongridmain .bienvenida-descripcion {
-    width: 222px;
+@media (min-width: 661px) {
+  body main .encabezado-index {
+    padding-top: 3rem;
+    background-position-x: 16rem;
   }
 
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 14px;
+  body main .encabezado-index .bienvenida-encabezado h1 {
+    font-size: 43px;
+  }
+
+  body main .encabezado-index .descripcion-encabezado-index h2 {
+    font-size: 28px;
+  }
+
+  body main .contenido-novedades .descripcion-novedades h4 {
+    font-size: 30px;
+  }
+}
+
+// 
+// 
+// 
+@media (min-width: 740px) {
+  body main .encabezado-index {
+    padding-top: 2rem;
+    background-position-x: 18rem;
+  }
+
+  body main .encabezado-index .bienvenida-encabezado h1 {
+    font-size: 46px;
+  }
+}
+
+// 
+// 
+// 
+@media (min-width: 912px) {
+  body main .encabezado-index {
+    gap: 40px;
+    background-position-y: -10rem;
+  }
+
+  body main .encabezado-index .bienvenida-encabezado h1 {
+    font-size: 61px;
+  }
+
+  body main .encabezado-index .descripcion-encabezado-index h2 {
+    font-size: 32px;
+  }
+}
+
+// 
+// 
+// 
+@media (min-width: 1024px) {
+  body main .encabezado-index {
+    background-position-x: 33rem;
+    background-position-y: 0rem;
+    background-size: 62%;
+    gap: 40px;
+  }
+
+  body main .encabezado-index .descripcion-encabezado-index h2 {
+    font-size: 31px;
+  }
+
+  body main .contenido-novedades {
+    flex-flow: row-reverse;
+  }
+
+  body main .contenido-novedades .descripcion-novedades {
+    width: 80%;
+    box-shadow: 2px 2px #00000094;
+    padding: 25px;
+  }
+
+  body main .contenido-novedades .galeria-novedades {
+    height: auto;
+  }
+}
+// 
+// 
+// 
+@media (min-width: 1280px) {
+  body main .encabezado-index {
+    gap: 70px;
+    padding-bottom: 4.5rem;
+    background-size: 75%;
+  }
+  body main .encabezado-index .bienvenida-encabezado h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.724);
+  }
+  body main .encabezado-index .descripcion-encabezado-index h2 {
+    font-size: 30px;
     padding: 20px;
   }
-  .bienvenida-pic img {
-    object-fit: cover;
-    object-position: 38%;
+  body main .subtitulo-index {
+    height: 14rem;
   }
-  body .sectiongridmain .subtitulo-novedades h2{
-    font-size: 25px;
-    &:hover {
-      font-size: 25px;
-      background-size: cover;
-    }
-  }
-  body .sectiongridmain .descripcion-novedades {
-    gap: 3px;
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
-    font-size: 17px;
-    padding: 5%;
-  }
-  body .sectiongridmain .descripcion-novedades a {
-    font-size: 13px;
-    padding: 5%;
-    width: 6rem;
-  }
-}
-// 
-// 
-// 
-@media (max-width: 367px) {
-  body .sectiongridmain .bienvenida-titulo h1 {
-    font-size: 24px; 
-  }
-  body .sectiongridmain .bienvenida-descripcion {
-    width: 200px;
-  }
-  body .sectiongridmain .bienvenida-descripcion h2 {
-    font-size: 13px;
-  }
-  body .sectiongridmain .subtitulo-novedades h2 {
+  body main .contenido-novedades .descripcion-novedades h4 {
     font-size: 35px;
-    &:hover {
-      font-size: 35px;
-    }
-  }
-  body .sectiongridmain .descripcion-novedades h3 {
-    font-size: 16px;
-    padding: 3%;
   }
 }
-// 
-// 
-// 
 //  -----------------fin de index-------------//
 // 
 // 
 // 
 // -----------------destinos html------------//
-@media (max-width: 963px) {
-  main .gridestinos .tittle-destinos h2 {
-    font-size: 40px;
-    &:hover {
-      font-size: 35px;
-    }
-  }
-  main .gridestinos .top-section-text h2 {
-    font-size: 28px;
-    padding: 4%;
-  }
-}
-// 
-// 
-// 
-@media (max-width: 775px) {
-  main .gridestinos {
-    grid-template-rows: .5fr 1fr 1.5fr 2fr;
-    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area5";
-  }
-  main .gridestinos .tittle-destinos h2 {
+@media (min-width: 661px) {
+  body .tittle-destinos h1 {
+    height: 150px;
     font-size: 30px;
-    &:hover {
-      font-size: 25px;
-    }
   }
-  main .gridestinos .top-section-text h2 {
-    font-size: 30px;
-    top: 6%;
-  }
-  main .gridestinos .top-section-pics {
-    bottom: 4%;
-    img {
-      &:hover {
-        width: 85%;
-      }
-    }
-  }
-}
-// 
-// 
-// 
-@media (max-width: 691px) {
-  main .gridestinos {
-    grid-template-rows: .5fr 1fr 1.5fr 2fr;
-    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area4" "area5 area5";
-  }
-  main .gridestinos .tittle-destinos h2 {
-    font-size: 25px;
-    &:hover {
-      font-size: 15px;
-    }
-  }
-  main .gridestinos .top-section-text h2 {
-    font-size: 27px;
-    top: 3%;
-  }
-  main .gridestinos .top-section-pics {
-    bottom: 1%;
-  }
-}
-// 
-// 
-// 
-@media (max-width: 422px) {
-  main .gridestinos .tittle-destinos h2 {
-    font-size: 21px;
-    &:hover {
-      font-size: 15px;
-    }
-  }
-  main .gridestinos .top-section-text h2 {
+  body .encabezado-destinos .descripcion-encabezado h2 {
     font-size: 24px;
-    top: 3%;
   }
 }
 // 
 // 
 // 
-@media (max-width: 367px) {
-  main .gridestinos .tittle-destinos h2 {
-    font-size: 18px;
-    &:hover {
-      font-size: 13px;
-    }
+@media (min-width: 850px) {
+  body .tittle-destinos h1 {
+    font-size: 35px;
   }
-  main .gridestinos .top-section-text h2 {
-    font-size: 21px;
-    top: 3%;
+  body .encabezado-destinos .descripcion-encabezado h2 {
+    font-size: 30px;
+    padding: 12px;
+  }
+  body .reset-main-destinos .cards-destinos {
+    flex-flow: row wrap;
+  }
+  body .reset-main-destinos .cards-destinos div {
+    width: 49%;
   }
 }
+// 
+// 
+// 
+@media (min-width: 1024px) {
+  body .reset-main-destinos section {
+    flex-flow: row;
+  }
+  body .tittle-destinos h1 {
+    height: 200px;
+  }
+  body .encabezado-destinos .descripcion-encabezado div {
+    width: 49%;
+  }
+  body .encabezado-destinos .descripcion-encabezado {
+    width: 100%;
+  }
+  body .encabezado-destinos .galeria-encabezado {
+    width: 100%;
+    height: 350px;
+  }
+}
+// 
+// 
+// 
+@media (min-width: 1280px) {
+  body .encabezado-destinos .descripcion-encabezado h2 {
+    font-size: 34px;
+  }
+}
+
 // -------------fin destinos html------------//
 // 
 // 
 // 
 // -------------escuelas---------------------//
-@media (max-width: 1025px) {
-  .gridescuelas .card-texto-peru h3 {
+@media (min-width: 661px) {
+  body .tittle-escuelas {
+    height: 150px;
+  }
+  body .tittle-escuelas h1 {
     font-size: 33px;
-    padding: 4%;
   }
-  .gridescuelas .card-texto-brasil h2 {
-    padding: 7%;
-  }
-  .gridescuelas .card-texto-brasil h3 {
-    font-size: 36px;
-    padding: 7%;
-  }
-}
-// 
-// 
-// 
-@media (max-width: 963px) {
-  .gridescuelas .card-texto-arg h2 {
-    padding: 7%;
-    font-size: 29px;
-  }
-  .gridescuelas .card-texto-arg h3 {
-    padding: 7%;
+  body .contenedor-cards div h2 {
     font-size: 27px;
   }
-  .gridescuelas .card-texto-brasil h2 {
-    padding: 14%;
-    font-size: 15px;
-  }
-  .gridescuelas .card-texto-brasil h3 {
-    padding: 10%;
-    font-size: 35px;
-  }
-  .gridescuelas .card-texto-peru h2 {
-    font-size: 37px;
-    padding: 8%;
-  }
-  .gridescuelas .card-texto-peru h3 {
-    font-size: 32px;
-    padding: 9%;
+  body .contenedor-cards div p {
+    font-size: 24px;
   }
 }
 // 
 // 
 // 
-@media (max-width: 775px) {
-  .gridescuelas .escuelas-titulo h2 {
+@media (min-width: 850px) {
+  body .tittle-escuelas h1 {
     font-size: 40px;
-    &:hover {
-      font-size: 30px;
-    }
   }
-  .gridescuelas {
-    grid-template-rows: .5fr 2fr 2fr 2fr 2fr 2fr 2fr;
-    grid-template-areas: "area1 area1" "area2 area2" "area3 area3" "area4 area4" "area5 area5" "area6 area6" "area7 area7";
-  }
-  .gridescuelas .card-texto-arg h2 {
-    padding: 10%;
-    font-size: 33px;
-  }
-  .gridescuelas .card-texto-arg h3 {
-    padding: 10%;
-    font-size: 30px;
-  }
-  .gridescuelas .card-texto-brasil h2 {
-    padding: 14%;
+  body .contenedor-cards div p {
     font-size: 27px;
   }
-  .gridescuelas .card-texto-brasil h3 {
-    padding: 10%;
-    font-size: 36px;
-  }
-  .gridescuelas .card-texto-peru h2 {
-    font-size: 50px;
-    padding: 12%;
-  }
-  .gridescuelas .card-texto-peru h3 {
-    font-size: 34px;
-    padding: 9%;
+  body .contenedor-cards span {
+    height: 400px;
   }
 }
 // 
 // 
 // 
-@media (max-width: 691px) {
-  .gridescuelas .escuelas-titulo h2 {
-    font-size: 30px;
+@media (min-width: 1024px) {
+  body .contenedor-cards div p {
+    font-size: 33px;
   }
-  .gridescuelas .card-texto-brasil h2 {
-    padding: 13%;
-    font-size: 25px;
-  }
-  .gridescuelas .card-texto-brasil h3 {
-    padding: 14%;
-    font-size: 36px;
-  }
-  .gridescuelas .card-texto-peru h2 {
-    font-size: 50px;
-    padding: 12%;
-  }
-  .gridescuelas .card-texto-peru h3 {
-    font-size: 34px;
-    padding: 12%;
-  }
-}
-// 
-// 
-// 
-@media (max-width: 474px) {
-  .gridescuelas .escuelas-titulo h2 {
-    font-size: 25px;
-    &:hover {
-      font-size: 25px;
-    }
-  }
-  .gridescuelas .card-texto-arg h2 {
-    padding: 15%;
-    font-size: 26px;
-  }
-  .gridescuelas .card-texto-brasil h2 {
-    padding: 15%;
-    font-size: 18px;
-  }
-  .gridescuelas .card-texto-brasil h3 {
-    padding: 15%;
-    font-size: 38px;
-  }
-  .gridescuelas .card-texto-peru h2 {
-    font-size: 45px;
-    padding: 15%;
-  }
-  .gridescuelas .card-texto-peru h3 {
-    font-size: 34px;
-    padding: 15%;
-  }
-  .gridescuelas .galeria-escuelas-arg img {
-    &:hover {
-      width: 90%;
-    }
-  }
-  .gridescuelas .galeria-escuelas-brasil img {
-    &:hover {
-      width: 90%;
-    }
-  }
-  .gridescuelas .galeria-escuelas-peru img {
-    &:hover {
-      width: 90%;
-    }
+  body .contenedor-cards span {
+    height: 600px;
   }
 }
 // -----------fin escuelas html--------------//
@@ -477,74 +250,106 @@
 // -----------------wsl-----------------------//
 @media (max-width: 775px) {
   main .grid-wsl .card-section-texto h2 {
-    font-size: 32px;
+    font-size: 27p18
   }
+
   main .grid-wsl .card-bottom-section-texto-top h2 {
-    font-size: 32px;
+    font-size: 27px;
   }
+
   main .grid-wsl .card-bottom-section-texto-middle h2 {
-    font-size: 32px;
+    font-size: 27px;
   }
+
   main .grid-wsl .card-bottom-section-texto-bottom h2 {
-    font-size: 32px;
+    font-size: 27px;
   }
 }
+
 // 
 // 
 // 
 @media (max-width: 540px) {
-  main .grid-wsl .titulo-section-wsl h2 {
-    font-size: 40px;
+  main .grid-wsl .titulo-section-wsl h1 {
+    font-size: 36px;
   }
+
   main .grid-wsl .subtitulo-section-wsl h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
+
   main .grid-wsl .card-section-texto h2 {
-    font-size: 21px;
+    font-size: 18px;
   }
+
   main .grid-wsl .card-bottom-section-texto-top h2 {
-    font-size: 21px;
+    font-size: 18px;
   }
+
   main .grid-wsl .card-bottom-section-texto-middle h2 {
-    font-size: 21px;
+    font-size: 18px;
   }
+
   main .grid-wsl .card-bottom-section-texto-bottom h2 {
-    font-size: 21px;
+    font-size: 18px;
   }
 }
+
 // 
 // 
 // 
 @media (max-width: 376px) {
   main .grid-wsl .card-section-texto h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
+
   main .grid-wsl .card-bottom-section-texto-top h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
+
   main .grid-wsl .card-bottom-section-texto-middle h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
+
   main .grid-wsl .card-bottom-section-texto-bottom h2 {
-    font-size: 20px;
+    font-size: 12px;
   }
 }
+
 // ---------------fin de wsl------------------//
 // 
 // 
 // 
+// --------------contacto html-----------------//
+@media (min-width: 700px) {
+  .gridcontacto {
+    flex-flow: row;
+  }
+  .gridcontacto .section-contacto-left {
+    width: 49%;
+  }
+  .gridcontacto .section-contacto-rigth {
+    width: 49%;
+  }
+  .gridcontacto .section-contacto-right img {
+    height: 25rem;
+  }
+}
 // --------------footer----------------//
 @media (max-width: 903px) {
   .cont-footer .botonera-footer .contac {
     font-size: 21px;
-  &:hover {
-    font-size: 21px;
+
+    &:hover {
+      font-size: 21px;
     }
   }
+
   .cont-footer .botonera-footer .boton-footer img {
     object-fit: contain;
   }
 }
+
 // 
 // 
 // 
@@ -553,30 +358,29 @@
     grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area10";
   }
 }
+
 // 
 // 
 // 
 @media (max-width: 450px) {
   .cont-footer .botonera-footer {
-    grid-template-areas: "area8 area1 area2 area3 area4 area6 area5 area5 area5 area5";
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "area8 area1 area2 area3 area4 area5 area5 area5";
   }
+
   .cont-footer .botonera-footer .contac {
-    grid-area: area5;
-    font-size: 12px;
-    height: 55%;
-    width: 55%;
-    top: 22%;
-  &:hover {
-    grid-area: area5;
-    font-size: 12px;
-    height: 55%;
-    width: 55%;
-    top: 22%;
+    width: 60%;
+    font-size: 18px;
+
+    &:hover {
+      grid-area: area5;
+      font-size: 18px;
     }
   }
 }
+
 // --------------fin de footer---------//
 // 
 // 
 // 
-  /* --------------fin media queries--------- */
+/* --------------fin media queries--------- */

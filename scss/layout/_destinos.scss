@@ -1,369 +1,111 @@
 /* <-----------------------------destinos------------------------------> */
 
-main {
-  .gridestinos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1.5fr 1.5fr 2.75fr 2.75fr;
-    grid-template-areas: "area1 area1" "area2 area3" "area2 area3" "area4 area5" "area4 area5";
+/* rediseño html destinos version mobile first */
 
-    .tittle-destinos {
-      grid-area: area1;
-      display: flex;
+body {
+  .reset-main-destinos section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .tittle-destinos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: 21px;
       background-image: url(../assets/fondo-titulo-destinos.jpg);
-      background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
-      object-fit: cover contain;
-      position: relative;
-
-      img {
-        grid: area1;
-        display: flex;
-        position: relative;
-      }
-
+      width: 100%;
+      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: aliceblue;
+      text-shadow: 1px 1px black;
+    }
+  }
+  .encabezado-destinos {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    .descripcion-encabezado {
+      background-color: rgb(61, 95, 248);
+      border-radius: 30px;
+      padding: 15px;
       h2 {
-        @include flex;
-        font-size: 55px;
-        width: 100%;
-        height: 100%;
-        color: $color-fuente-body;
-        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
-        grid-area: area1;
-        transition: 0.7s ease-in;
-
-        &:hover {
-          @include flex;
-          font-size: 55px;
-          background-image: url(../assets/fondo-titulo-destinos.jpg);
-          background-position: center;
-          background-size: 100%;
-          color: transparent;
-          text-shadow: none;
-          grid-area: area1;
-          transition: 0.7s ease-in;
-        }
+        font-size: 18px;
+        color: aliceblue;
+        text-shadow: 1px 1px black;
       }
     }
-
-    .top-section-text {
-      grid-area: area2;
+    .galeria-encabezado {
       display: flex;
-      object-fit: cover;
-      padding: 3%;
-      height: 95%;
-      width: 98%;
-      left: 1%;
-      position: relative;
-
-      h2 {
-        @include flex;
-        grid-area: area2;
-        border-radius: 30px;
-        color: rgb(255, 255, 255);
-        box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
-        position: relative;
-        background-color: $fondo-cards;
-        border: 2px rgba(0, 0, 0, 0.767);
-        font-size: 35px;
-        padding: 3%;
-        object-fit: cover;
-        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.623);
-      }
-    }
-
-    .top-section-pics {
-      grid-area: area3;
-      display: flex;
-      position: relative;
-      padding: 3%;
-      height: 95%;
-      width: 98%;
-      left: 1%;
-
+      height: 250px;
       img {
-        grid-area: area3;
         width: 0%;
-        height: 100%;
         flex-grow: 1;
-        object-fit: cover;
-        opacity: 0.8;
-        transition: 0.3s ease;
-        display: flex;
-        position: relative;
-
+        opacity: .8;
+        transition: .6s;
+        filter: contrast(.6);
         &:hover {
-          grid-area: area3;
-          width: 55%;
-          height: 100%;
           opacity: 1;
+          width: 250px;
+          filter: contrast(1.2);
         }
       }
-
-      .brimg1 {
+      .border-rad-galeria-left {
         border-radius: 30px 0px 0px 30px;
       }
-
-      .brimg2 {
+      .border-rad-galeria-right {
         border-radius: 0px 30px 30px 0px;
       }
     }
-
-    .bottom-section-cards-left {
-      grid-area: area4;
-      display: flex;
-      flex-flow: wrap column;
-      font-size: 27px;
-      padding: 3%;
-      object-fit: cover;
-
-      div {
-        display: flex;
-        margin: 1%;
-        bottom: 3%;
-        position: relative;
-      }
-
-      .card-1-left {
-        background-color: $color-fuente-body;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        padding: 3%;
-        border-radius: 20px;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: $color-fuente-body;
-          border: 1pz black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
-
-      .card-2-left {
-        background-color: white;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        border-radius: 20px;
-        padding: 3%;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: $color-fuente-body;
-          border: 1px black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
-
-      .card-3-left {
-        background-color: white;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        padding: 3%;
-        border-radius: 20px;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: $color-fuente-body;
-          border: 1pz black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
-    }
-
-    .bottom-section-cards-right {
-      grid-area: area5;
+  }
+  .cards-destinos {
+    flex-flow: column;
+    gap: 15px;
+    div {
       display: flex;
       flex-flow: column;
-      font-size: 27px;
-      padding: 3%;
-
-      div {
-        display: flex;
-        margin: 1%;
-        bottom: 3%;
-        position: relative;
-      }
-
-      .card-1-right {
-        background-color: white;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        padding: 3%;
-        border-radius: 20px;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: aliceblue;
-          border: 1pz black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
-
-      .card-2-right {
-        background-color: white;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        padding: 3%;
-        border-radius: 20px;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: aliceblue;
-          border: 1pz black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
-
-      .card-3-right {
-        background-color: white;
-        color: $main-color;
-        display: flex;
-        flex-flow: column;
-        grid-area: area4;
-        padding: 3%;
-        border-radius: 20px;
-
-        img {
-          display: flex;
-          position: relative;
-          object-fit: cover;
-          height: 150px;
-          border-radius: 15px 15px 0px 0px;
-        }
-
-        a {
-          display: flex;
-          text-decoration: none;
-          order: 2;
-          background-color: $fondo-cards;
-          color: $color-fuente-body;
-          border: 1pz black;
-          border-radius: 15px;
-          justify-content: center;
-          border-radius: 0px 0px 15px 15px;
-        }
-
-        h3 {
-          padding: 0%;
-          object-fit: cover;
-          justify-content: center;
-          display: flex;
-        }
-      }
+      background-color: white;
+      height: 200px;
+      width: 100%;
+      border-radius: 30px;
+      padding: 10px;
+    }
+    h3 {
+      color: rgb(61, 95, 248);
+      font-size: 21px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 0;
+      padding: 10px;
+    }
+    img {
+      height: 55%;
+      object-fit: cover;
+      order: 1;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: rgb(61, 95, 248);
+      width: 100%;
+      order: 2;
+      border-radius: 0px 0px 30px 30px;
+      padding: 10px;
+      text-decoration: none;
     }
   }
 }
+
 
 
 /* ---------------------fin de html destinos------------------- */

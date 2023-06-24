@@ -1,198 +1,101 @@
 /*<---------------------------main----------------------------------->*/
 body {
-  background-color: $main-color;
-  background-image: url(../assets/fondo-difuminado.jpg);
-  background-repeat: repeat;
-  background-position: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-
-  .sectiongridmain {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 4fr 4fr 2.5fr 4fr 4fr;
-    grid-template-areas: "area1 area3" "area2 area3" "area4 area4" "area6 area5" "area6 area5";
-    .sectiongridmain div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bienvenida-titulo {
-      grid-area: area1;
-      display: flex;
-      padding: 30px;
-      h1 {
-        @include flex;
-        margin: 5%;
-        justify-content: end;
-        align-items: center;
-        width: 100%;
-        height: 90%;
-        text-shadow: 2px 3px rgba(0, 0, 0, 0.637);
-        z-index: 3;
-        transition: 0.6s ease-in;
-        bottom: 10%;
-        color: $color-fuente-body;
-        font-size: 60px;
-      }
-    }
-
-    .bienvenida-descripcion {
-      padding: 30px;
-      h2 {
-        @include flex;
-        font-weight: 7;
-        border-radius: 39px;
-        color: $color-fuente-body;
-        box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.493);
-        opacity: 100%;
-        background-position: 15%;
-        background-image: url(../assets/fondo-descripcion-main-top.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 2px rgba(0, 0, 0, 0.767);
-        font-size: 26px;
-        width: 100%;
-        height: 235px;
-        transition: 0.4s ease-in;
-        padding: 4%;
-        background-blend-mode: darken;
-        background-color: rgb(53, 53, 191);
-        text-shadow: 1px 2px rgba(0, 0, 0, 0.637)
-      }
-    }
-    .bienvenida-pic {
-      grid-area: area3;
-      display: flex;
-      position: relative;
-      z-index: -1;
+  font-family: 'Libre Franklin', sans-serif;
+  main {
+    background-image: linear-gradient(rgb(32, 213, 229), rgb(61, 95, 248));
+    flex-flow: column;
+    .encabezado-index {
+      background-image: url(../assets/imagen-main-top.png);
+      background-size: cover;
       width: 100%;
-      height: 100%;
-      img {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-size: contain;
-      }
-    }
-
-    .subtitulo-novedades {
-      grid-area: area4;
-      display: flex;
-      background-image: url(../assets/subtitulo-main-middle.png);
-      background-position: center;
-      h2 {
-        font-size: 85px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $color-fuente-body;
-        text-shadow: 2px 2px 0.5px rgba(0, 0, 0, 0.815);
-        grid-area: area4;
-        transition: 0.5s ease-in;
-        &:hover {
-          font-size: 85px;
-          background-image: url(../assets/subtitulo-main-middle.png);
-          background-position: center;
-          background-size: 100%;
-          transition: 0.9s;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: transparent;
-          text-shadow: none;
-          grid-area: area4;
-          transition: 0.5s ease-out;
-        }
-      }
-    }
-    
-    .descripcion-novedades {
-      grid-area: area5;
       display: flex;
       flex-flow: column;
-      justify-content: space-around;
-      font-weight: 7;
-      border-radius: 35px;
-      color: $color-fuente-body;
-      box-shadow: 2px 2px 1px 2px rgba(0, 0, 0, 0.582);
-      opacity: 85%;
-      position: relative;
-      background-color: $fondo-cards;
-      border: 2px rgba(0, 0, 0, 0.767);
-      width: 79%;
-      height: 440px;
-      padding: 5%;
-      top: 11%;
-      left: 10%;
-      gap: 20px;
-      h3 {
-        display: flex;
-        font-weight: 7;
-        color: $color-fuente-body;
-        font-size: 27px;
-      }
-      a {
-        display: flex;
-        color: rgb(13, 0, 71);
-        font-size: 24px;
-        background-color: antiquewhite;
-        border-radius: 15px;
-        padding: 3%;
-        box-shadow: 1px 1px 0.5px 1px rgba(0, 0, 0, 0.63);
-        text-decoration: none;
-        transition: 0.5s ease-in;
-        align-items: center;
-        align-self: center;
-        width: 40%;
-        justify-content: center;
-        &:hover {
-          color: $color-fuente-body;
-          font-size: 24px;
-          background-color: rgb(1, 0, 83);
-          border-radius: 15px;
-          padding: 2%;
-          box-shadow: 1px 1px 0.5px 1px rgba(255, 255, 255, 0.63);
-          text-decoration: none;
-          transition: 0.5s ease-out;
+      gap: 70px;
+      padding: 25px;
+      padding-top: 5rem;
+      padding-bottom: 2.5rem;
+      .bienvenida-encabezado {
+        width: 50%;
+        padding: 5px;
+        h1 {
+          font-size: 27px;
+          color: aliceblue;
+          text-shadow: 1px 1px black;
         }
       }
-      body .sectiongridmain .descripcion-novedades {
-        display: flex;
-        align-self: center;
+      .descripcion-encabezado-index {
+        width: 50%;
+        background-image: url(../assets/fondo-descripcion-main-top.webp);
+        background-position: 40% 30%;
+        background-size: cover;
+        background-blend-mode: darken;
+        background-color: rgb(91, 106, 172);
+        border-radius: 30px;
+        padding: 15px;
+        h2 {
+          font-size: 18px;
+          color: white;
+          text-shadow: 1px 1px black;
+        }
       }
     }
-
-    .galeria-novedades {
-      grid-area: area6;
+    .subtitulo-index {
+      width: 100%;
+      height: 150px;
+      background-image: url(../assets/subtitulo-main-middle.png);
+      background-size: cover;
       display: flex;
-      position: relative;
-      top: 11%;
-      left: 10%;
-      width: 80%;
-      height: 75%;
-      img {
-        width: 0%;
-        height: 100%;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: 0.8;
-        transition: 0.3s ease;
-        &:hover {
-          width: 40%;
-          opacity: 1;
-        }
-      }
-      .brimg1 {
-        border-radius: 30px 0px 0px 30px;
-      }
-      .brimg2 {
-        border-radius: 0px 30px 30px 0px;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        font-size: 33px;
+        color: white;
+        text-shadow: 1px 1px black;
       }
     }
-  }  
+    .contenido-novedades {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      padding: 25px;
+      gap: 25px;
+      .descripcion-novedades {
+        background-color: rgb(61, 95, 248);
+        border-radius: 30px;
+        h4 {
+          color: white;
+          text-shadow: 1px 1px black;
+          padding: 20px;
+        }
+      }
+      .galeria-novedades {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        img {
+          flex-grow: 1;
+          width: 0%;
+          opacity: .8;
+          filter: contrast(.8);
+          transition: .7s;
+          &:hover {
+            width: 60%;
+            opacity: 1;
+            filter: contrast(1.2);
+          }
+        }
+        .border-rad-galeria-left {
+          border-radius: 30px 0px 0px 30px;
+        }
+        .border-rad-galeria-right {
+          border-radius: 0px 30px 30px 0px;
+        }
+      }
+    }
+  }
 }
+
+
+
+
 /*<---------------------------fin de index----------------------------->*/
